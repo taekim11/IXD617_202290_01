@@ -297,10 +297,4 @@ footer {
     height: 12px;
     border-top: 2px solid #0F1115;
     border-right: 2px solid #0F1115;
-    behavior: url(-ms-transform.htc);
-    -moz-transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    transform: rotate(135deg);
 }

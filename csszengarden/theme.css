@@ -4,12 +4,13 @@
 html {
 	margin: 0;
 	padding: 0;
+    font-family: Arial, "Times New Roman";
 	}
 
 body {
         color : #1C6758;
         background : #D6CDA4;
-        font-family : 'Libre Baskerville', sans-serif;
+        font-family: Arial, "Times New Roman";
         font-size : 1.2em;
     }
 
@@ -21,14 +22,16 @@ a {
 
 p { 
 	margin-top: 0; 
-	text-align: center;
 	}
 
 h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
+	font-family: Arial, "Times New Roman";
+	letter-spacing: 8px; 
 	color: #7D775C;
 	}
+.preamble p {
+    text-indent: 40px;
+}
 a:link { 
 	font-weight: bold;
     text-decoration: none;
@@ -69,6 +72,7 @@ header h1 {
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-indent: 50px;
 	}
 
 header h2 { 
@@ -96,7 +100,6 @@ header {
     width: 400px;
     margin: 10px;
     outline-style: dotted;
-    margin-left: 300px;
     background-color: darkseagreen;
 	}
 
@@ -109,26 +112,53 @@ header {
     column-rule-style: double;
 	}
 .supporting {	
-	padding-left: 10px;
-    margin-bottom: 40px;
-    /* width: 300px; */
-    height: 260px;
+    height: 400px;
     padding: 10px;
     border: 5px solid #1C6758;
     margin-top: 40px;
     border-radius: 2em;
+    width: 500px;
+    background-image: url(imgs/3.png);
+    background-repeat: no-repeat;
 	}
 .participation {
-    padding-left: 10px;
     margin-bottom: 40px;
-    /* width: 300px; */
-    height: 300px;
+    height: 500px;
     padding: 10px;
     border: 5px solid #1C6758;
     margin-top: 60px;
+    width: 1000px;
+    border-style: dotted;
+}
+.participation p{
+    text-transform: capitalize;
+    word-spacing: 2px;
+    line-height: 40px;
+}
+.benefits {
+    margin-left: 200px;
+    margin-bottom: 40px;
+    height: 200px;
+    padding: 10px;
+    border: 5px solid #1C6758;
+    margin-top: 20px;
+    width: 500px;
+    border-radius: 40px;
+    background-image: url(imgs/1.png);
+}
+.benefits p{
+    color:white;
+}
+.requirements {
+    margin-bottom: 40px;
+    height: 500px;
+    padding: 10px;
+    border: 5px solid #1C6758;
+    margin-top: 20px;
+    width: 1000px;
 }
 footer { 
-	text-align: center; 
+    line-height: 400px;
 	}
 footer a:link, footer a:visited { 
 	margin-right: 20px; 
@@ -139,13 +169,11 @@ footer a:link, footer a:visited {
 	position: absolute; 
 	top: 0; 
 	right: 0;
+    margin-right:100px
 	}
 .sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
+	font: 20px verdana, sans-serif;
+    margin-top: 600px;
 	}
 .sidebar h3.select {  
 	margin: 10px 0 5px 0; 
@@ -188,15 +216,14 @@ footer a:link, footer a:visited {
 	list-style-type: none;
 	}
 .sidebar li a:link {
-	color: #988F5E;
+	color: #FA7070;
 	}
 .sidebar li a:visited {
-	color: #B3AE94;
+	color: #C6EBC5;
 	}
 
 
 .extra1 {
-
 	position: absolute; 
 	top: 40px; 
 	right: 0; 

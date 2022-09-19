@@ -1,0 +1,18 @@
+.accordion dt {
+    background-color: pink;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 0.1em;
+    cursor:pointer;
+}
+.accordion dd{
+    padding:1em;
+    margin-inline-start:0;
+    border: 2px solid beige;
+    border-top-width:0;
+    display:none;
+}
+.accordion dt ~ dt {
+    margin-top: 1em;
+}

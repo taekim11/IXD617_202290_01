@@ -35,7 +35,7 @@ h3 {
 a:link { 
 	font-weight: bold;
     text-decoration: none;
-    color: #1C6758;
+    color: white;
 	}
 a:visited { 
 	font-weight: bold; 
@@ -53,14 +53,16 @@ abbr {
 .page-wrapper { 
     padding: 20px 500px 20px 200px;
     margin: 0;
-    position: relative;
     border-radius: 25px;
     background: url(imgs/2.png);
     background-position: left top;
     background-repeat: repeat;
     height: 320px;
+	margin-right: 44px;
 	}
-
+.explanation {
+	margin-left: 225px;
+}
 .intro { 
 	min-width: 470px;
 	width: 100%;
@@ -76,11 +78,26 @@ header h1 {
 	}
 
 header h2 { 
+	position:relative;
     margin: -10px auto 0;
     width: 100%;
     text-align: end;
     font-style: italic;
+	text-transform: uppercase;
 	}
+header h2::before {
+	content: attr(data-text);
+	top:0;
+	left:0;
+	width:0;
+	height:100%;
+	color:purple;
+	-webkit-text-stroke: 0vw white;
+	border-right:20px solid purple;
+	overflow: hidden;
+	animation: animate 4s linear infinite;
+}
+
 header {
     padding-top: 20px;
     height: 100px;
@@ -94,7 +111,12 @@ header {
 	margin: 20px 20px 20px 10px; 
 	width: 160px; 
 	float: left;
+	transition-duration:1000ms;
+	transition-property: all;
 	}
+.summary:hover {
+	transform:rotate(45deg);
+}
 .summary p {
 	text-align: center;
     width: 400px;
@@ -112,12 +134,12 @@ header {
     column-rule-style: double;
 	}
 .supporting {	
-    height: 400px;
+	height: 489px;
     padding: 10px;
     border: 5px solid #1C6758;
     margin-top: 40px;
     border-radius: 2em;
-    width: 500px;
+    width: 634px;
     background-image: url(imgs/3.png);
     background-repeat: no-repeat;
 	}
@@ -142,12 +164,20 @@ header {
     padding: 10px;
     border: 5px solid #1C6758;
     margin-top: 20px;
-    width: 500px;
+    width: 1086px;
     border-radius: 40px;
     background-image: url(imgs/1.png);
 }
 .benefits p{
     color:white;
+}
+.benefits h3 {
+	color:white;
+}
+.participation h3 {
+	letter-spacing: none;
+	font-style: italic;
+	color: white;
 }
 .requirements {
     margin-bottom: 40px;
@@ -159,6 +189,9 @@ header {
 }
 footer { 
     line-height: 400px;
+	background-color: #1C6758;
+	width: 1699px;
+
 	}
 footer a:link, footer a:visited { 
 	margin-right: 20px; 
@@ -203,17 +236,15 @@ footer a:link, footer a:visited {
 	overflow: hidden;
 	}
 
-
+.design-name {
+	color:white;
+}
 .sidebar ul {
 	margin: 0;
 	padding: 0;
 	}
 .sidebar li {
-	line-height: 1.3em;  
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
-	list-style-type: none;
+	list-style-type: disclosure-closed;
 	}
 .sidebar li a:link {
 	color: #FA7070;

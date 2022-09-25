@@ -10,4 +10,4 @@ IXD 617 Advanced Tech: Mobile Web
 ### Assignment Links
 - http://tae-kim-design.com/aau/ixd617/profile/
 - http://tae-kim-design.com/aau/ixd617/csszengarden/
-
+- http://tae-kim-design.com/aau/ixd617/pdf/JindoTrackerApp_TaeKim_Proposal.pdf

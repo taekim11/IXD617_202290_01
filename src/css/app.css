@@ -33,9 +33,9 @@ a {
     text-decoration: none;
 }
 
-
-
-
+[data-role="main"] .h1 {
+    text-align:center;
+}
 
 
 /* APP STRUCTURE */
@@ -59,7 +59,7 @@ a {
 [data-role="main"] {
     flex: 1 1 100%;
     position: relative;
-
+    text-align: center;
     z-index:1;
 }
 

@@ -129,7 +129,6 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: wrap;
 }
 
 .about-image {

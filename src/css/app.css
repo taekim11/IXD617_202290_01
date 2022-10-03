@@ -3,6 +3,12 @@
     box-sizing:border-box;
 }
 
+.ui-mobile .ui-page-active {
+    display: block;
+    overflow: visible;
+    overflow-x: hidden;
+}
+
 :root {
     --font-header:Helvetica, Arial, sans-serif;
     --font-body:var(--font-header);
@@ -106,7 +112,6 @@ a {
 [data-role="footer"] a {
     display:block;
 }
-
 
 
 

@@ -14,3 +14,4 @@ IXD 617 Advanced Tech: Mobile Web
 
 ### Example Files
 - http://tae-kim-design.com/aau/ixd617/examples/jquery.html
+- http://tae-kim-design.com/aau/ixd617/examples/jquery_mobile.html

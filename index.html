@@ -24,7 +24,7 @@
     <section data-role="page" id="signin-page">
         <div data-role="main" class="display-flex flex-column">
             <div class="flex-stretch signin-hero">
-                <img src="images/icons/jindo.svg" alt="" class="hero-icon">
+                <img src="images/icons/jindo.png" alt="" class="hero-icon">
             </div>
             <form class="form" id="signin-form" data-ajax="false">
                 <div class="warning"></div>
@@ -78,7 +78,7 @@
             <div class="map"></div>
 
             <div class="floater top left">
-                <a href="#" class="btn-circle" data-activate="#recent-add-modal">☰</a>
+                <a href="#" class="btn-circle2" data-activate="#recent-add-modal">☰</a>
             </div>
 
             <div id="recent-add-modal" class="modal">
@@ -91,9 +91,9 @@
         </div>
         <footer data-role="footer">
             <ul>
-                <li><a href="#recent-page"> <img src="images/compass.png" alt="" class="compass"></a></li>
-                <li><a href="#list-page"> <img src="images/paw.png" alt="" class="paw"></a></li>
-                <li><a href="#user-profile-page"> <img src="images/person.png" alt="" class="person"></a></li>
+                <li><a href="#recent-page"> <img src="images/compasson.png" alt="" id="compass"></a></li>
+                <li><a href="#list-page"> <img src="images/paw.png" alt="" id="paw"></a></li>
+                <li><a href="#user-profile-page"> <img src="images/person.png" alt="" id="person"></a></li>
             </ul>
         </footer>
     </section>
@@ -108,7 +108,7 @@
             <div class="animallist">
                 <!-- div.animallist-item*10>a[href="#animal-profile-page"]>{Animal $} -->
                 <div class="alist">Jindos</div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 1</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Jina</a></div>
                 <div class="animallist-item"><a href="#animal-profile-page">Animal 2</a></div>
                 <div class="animallist-item"><a href="#animal-profile-page">Animal 3</a></div>
                 <div class="animallist-item"><a href="#animal-profile-page">Animal 4</a></div>
@@ -155,9 +155,9 @@
         </div>
         <footer data-role="footer">
             <ul>
-                <li><a href="#recent-page"> <img src="images/compass.png" alt="" class="compass"></a></li>
-                <li><a href="#list-page"> <img src="images/paw.png" alt="" class="paw"></a></li>
-                <li><a href="#user-profile-page"> <img src="images/person.png" alt="" class="person"></a></li>
+                <li><a href="#recent-page"> <img src="images/compass.png" alt="" id="compass"></a></li>
+                <li><a href="#list-page"> <img src="images/pawon.png" alt="" id="paw"></a></li>
+                <li><a href="#user-profile-page"> <img src="images/person.png" alt="" id="person"></a></li>
             </ul>
         </footer>
 
@@ -174,17 +174,22 @@
 
     <!-- USER PROFILE PAGE -->
     <section data-role="page" id="user-profile-page">
-        <div data-role="main">
-            <h1>User Profile</h1>
-            <div>
+        <div data-role="main2">
+            <h1>Damien</h1>
+            <img src="images/profileimage.png" alt="" class="hero-icon">
+                <h2>Damien@gmail.com</h2>
+            <div class="info">
+                <p>Edit Profile</p>
+                <p>About Jindo</p>
+                <p>Help & Guides</p>
                 <a href="#" class="js-logout">Log out</a>
             </div>
         </div>
         <footer data-role="footer">
             <ul>
-                <li><a href="#recent-page"> <img src="images/compass.png" alt="" class="compass"></a></li>
-                <li><a href="#list-page"> <img src="images/paw.png" alt="" class="paw"></a></li>
-                <li><a href="#user-profile-page"> <img src="images/person.png" alt="" class="person"></a></li>
+                <li><a href="#recent-page"> <img src="images/compass.png" alt="" id="compass"></a></li>
+                <li><a href="#list-page"> <img src="images/paw.png" alt="" id="paw"></a></li>
+                <li><a href="#user-profile-page"> <img src="images/personon.png" alt="" id="person"></a></li>
             </ul>
         </footer>
     </section>
@@ -193,13 +198,19 @@
     <!-- Animal PROFILE PAGE -->
     <section data-role="page" id="animal-profile-page">
         <header data-role="header">
-            <h1>Animal Profile</h1>
+            <h1>Jindo Profile</h1>
             <ul>
                 <li><a href="#list-page"> <img src="images/goback.png" alt="" class="back"></a></li>
             </ul>
         </header>
-        <div data-role="main">
-            Animal Profile
+        <div data-role="main2">
+            <img src="images/icons/jina.png" alt="" class="hero-icon">
+            <h2>I'm Jina</h2>
+            <div class="info">
+                <p>Color</p>
+                <p>Personality</p>
+                <p>Temperament</p>
+            </div>
         </div>
     </section>
 

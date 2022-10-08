@@ -14,6 +14,9 @@
     <script src="src/js/app.js"></script>
     <script src="src/js/signin.js"></script>
     <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -21,20 +24,20 @@
     <section data-role="page" id="signin-page">
         <div data-role="main" class="display-flex flex-column">
             <div class="flex-stretch signin-hero">
-                <img src="images/icons/dice.svg" alt="" class="hero-icon">
+                <img src="images/icons/jindo.svg" alt="" class="hero-icon">
             </div>
             <form class="form" id="signin-form" data-ajax="false">
                 <div class="warning"></div>
                 <div class="form-control">
                     <label class="form-label" for="signin-username">Username</label>
-                    <input class="form-input" type="text" id="signin-username" data-role="none" placeholder="Type your Username">
+                    <input class="form-input" type="text" id="signin-username" data-role="none" placeholder="you@gmail.com">
                 </div>
                 <div class="form-control">
                     <label class="form-label" for="signin-password">Password</label>
-                    <input class="form-input" type="password" id="signin-password" data-role="none" placeholder="Type your Password">
+                    <input class="form-input" type="password" id="signin-password" data-role="none" placeholder="your password">
                 </div>
                 <div class="form-control">
-                    <input type="submit" class="form-button" value="Click me" data-role="none">
+                    <input type="submit" class="form-button" value="Log In" data-role="none">
                 </div>
                 <div class="form-control" style="text-align:center; font-size: 0.7em">
                     Don't have an account? <a href="#signup-page">Sign Up!</a>
@@ -48,18 +51,18 @@
             <form class="form" id="signup-form" data-ajax="false">
                 <div class="form-control">
                     <label class="form-label" for="signup-username">Username</label>
-                    <input class="form-input" type="text" id="signup-username" data-role="none" placeholder="Type your Username">
+                    <input class="form-input" type="text" id="signup-username" data-role="none" placeholder="you@gmail.com">
                 </div>
                 <div class="form-control">
                     <label class="form-label" for="signup-password">Type a Password</label>
-                    <input class="form-input" type="password" id="signup-password" data-role="none" placeholder="Type your Password">
+                    <input class="form-input" type="password" id="signup-password" data-role="none" placeholder="password (4 characters or more)">
                 </div>
                 <div class="form-control">
                     <label class="form-label" for="signup-confirm">Confirm Password</label>
-                    <input class="form-input" type="password" id="signup-confirm" data-role="none" placeholder="Type your Password">
+                    <input class="form-input" type="password" id="signup-confirm" data-role="none" placeholder="password (4 characters or more)">
                 </div>
                 <div class="form-control">
-                    <input type="submit" class="form-button" value="Click me" data-role="none">
+                    <input type="submit" class="form-button" value="Sign Up" data-role="none">
                 </div>
                 <div class="form-control" style="text-align:center; font-size: 0.7em">
                     Already have an account? <a href="#signin-page">Sign In!</a>
@@ -88,9 +91,9 @@
         </div>
         <footer data-role="footer">
             <ul>
-                <li><a href="#recent-page">Recent</a></li>
-                <li><a href="#list-page">List</a></li>
-                <li><a href="#user-profile-page">Profile</a></li>
+                <li><a href="#recent-page"> <img src="images/compass.png" alt="" class="compass"></a></li>
+                <li><a href="#list-page"> <img src="images/paw.png" alt="" class="paw"></a></li>
+                <li><a href="#user-profile-page"> <img src="images/person.png" alt="" class="person"></a></li>
             </ul>
         </footer>
     </section>
@@ -99,11 +102,12 @@
     <!-- LIST PAGE -->
     <section data-role="page" id="list-page">
         <header data-role="header">
-            <h1>Animal List</h1>
+
         </header>
         <div data-role="main">
             <div class="animallist">
                 <!-- div.animallist-item*10>a[href="#animal-profile-page"]>{Animal $} -->
+                <div class="alist">Jindos</div>
                 <div class="animallist-item"><a href="#animal-profile-page">Animal 1</a></div>
                 <div class="animallist-item"><a href="#animal-profile-page">Animal 2</a></div>
                 <div class="animallist-item"><a href="#animal-profile-page">Animal 3</a></div>
@@ -114,56 +118,36 @@
                 <div class="animallist-item"><a href="#animal-profile-page">Animal 8</a></div>
                 <div class="animallist-item"><a href="#animal-profile-page">Animal 9</a></div>
                 <div class="animallist-item"><a href="#animal-profile-page">Animal 10</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 1</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 2</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 3</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 4</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 5</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 6</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 7</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 8</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 9</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 10</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 1</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 2</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 3</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 4</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 5</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 6</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 7</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 8</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 9</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 10</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 1</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 2</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 3</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 4</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 5</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 6</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 7</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 8</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 9</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 10</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 1</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 2</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 3</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 4</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 5</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 6</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 7</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 8</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 9</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 10</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 1</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 2</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 3</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 4</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 5</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 6</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 7</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 8</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 9</a></div>
-                <div class="animallist-item"><a href="#animal-profile-page">Animal 10</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 11</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 12</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 13</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 14</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 15</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 16</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 17</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 18</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 19</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 20</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 21</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 22</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 23</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 24</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 25</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 26</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 27</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 28</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 29</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 30</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 31</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 32</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 33</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 34</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 35</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 36</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 37</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 38</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 39</a></div>
+                <div class="animallist-item"><a href="#animal-profile-page">Animal 40</a></div>
             </div>
             <div class="floater bottom right">
                 <a href="#" class="btn-circle" data-activate="#list-add-modal">&plus;</a>
@@ -171,18 +155,18 @@
         </div>
         <footer data-role="footer">
             <ul>
-                <li><a href="#recent-page">Recent</a></li>
-                <li><a href="#list-page">List</a></li>
-                <li><a href="#user-profile-page">Profile</a></li>
+                <li><a href="#recent-page"> <img src="images/compass.png" alt="" class="compass"></a></li>
+                <li><a href="#list-page"> <img src="images/paw.png" alt="" class="paw"></a></li>
+                <li><a href="#user-profile-page"> <img src="images/person.png" alt="" class="person"></a></li>
             </ul>
         </footer>
 
         <div id="list-add-modal" class="modal">
             <div class="modal-back" data-deactivate="#list-add-modal"></div>
             <div class="modal-popup">
-                <div class="modal-head">Head</div>
-                <div class="modal-body">Body</div>
-                <div class="modal-foot">Foot</div>
+                <div class="modal-head">Add a new Jindo</div>
+                <div class="modal-body">Color</div>
+                <div class="modal-foot">Personality</div>
             </div>
         </div>
     </section>
@@ -198,9 +182,9 @@
         </div>
         <footer data-role="footer">
             <ul>
-                <li><a href="#recent-page">Recent</a></li>
-                <li><a href="#list-page">List</a></li>
-                <li><a href="#user-profile-page">Profile</a></li>
+                <li><a href="#recent-page"> <img src="images/compass.png" alt="" class="compass"></a></li>
+                <li><a href="#list-page"> <img src="images/paw.png" alt="" class="paw"></a></li>
+                <li><a href="#user-profile-page"> <img src="images/person.png" alt="" class="person"></a></li>
             </ul>
         </footer>
     </section>
@@ -211,9 +195,7 @@
         <header data-role="header">
             <h1>Animal Profile</h1>
             <ul>
-                <li><a href="#" data-rel="back">Back</a></li>
-                <li class="flex-stretch"></li>
-                <li><a href="#animal-edit-page">Edit</a></li>
+                <li><a href="#list-page"> <img src="images/goback.png" alt="" class="back"></a></li>
             </ul>
         </header>
         <div data-role="main">

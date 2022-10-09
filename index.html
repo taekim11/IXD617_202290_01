@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Tracker</title>
+    <title>Jindo Tracker</title>
 
     <!-- <link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css"> -->
     <link rel="stylesheet" href="src/css/app.css">
@@ -39,7 +39,7 @@
                 <div class="form-control">
                     <input type="submit" class="form-button" value="Log In" data-role="none">
                 </div>
-                <div class="form-control" style="text-align:center; font-size: 0.7em">
+                <div class="form-control" style="text-align:center; font-size: 0.8em">
                     Don't have an account? <a href="#signup-page">Sign Up!</a>
                 </div>
             </form>
@@ -81,6 +81,10 @@
                 <a href="#" class="btn-circle2" data-activate="#recent-add-modal">☰</a>
             </div>
 
+            <div class="floater bottom right">
+                <a href="#" class="btn-circle" data-activate="#list-add-modal">&plus;</a>
+            </div>
+
             <div id="recent-add-modal" class="modal">
                 <div class="modal-back transparent" data-deactivate="#recent-add-modal"></div>
                 <div class="modal-drawer left">
@@ -96,14 +100,23 @@
                 <li><a href="#user-profile-page"> <img src="images/icons/person.png" alt="" id="person"></a></li>
             </ul>
         </footer>
+
+        <div id="list-add-modal" class="modal">
+            <div class="modal-back" data-deactivate="#list-add-modal"></div>
+            <div class="modal-popup">
+                <div class="modal-head">Add a new Jindo</div>
+                <div class="modal-body">Color</div>
+                <div class="modal-foot">Personality</div>
+            </div>
+        </div>
+
     </section>
 
 
     <!-- LIST PAGE -->
     <section data-role="page" id="list-page">
-        <header data-role="header">
+        <!-- <header data-role="header"></header> -->
 
-        </header>
         <div data-role="main">
             <div class="animallist">
                 <!-- div.animallist-item*10>a[href="#animal-profile-page"]>{Animal $} -->
@@ -149,9 +162,6 @@
                 <div class="animallist-item"><a href="#animal-profile-page">Animal 39</a></div>
                 <div class="animallist-item"><a href="#animal-profile-page">Animal 40</a></div>
             </div>
-            <div class="floater bottom right">
-                <a href="#" class="btn-circle" data-activate="#list-add-modal">&plus;</a>
-            </div>
         </div>
         <footer data-role="footer">
             <ul>
@@ -160,15 +170,6 @@
                 <li><a href="#user-profile-page"> <img src="images/icons/person.png" alt="" id="person"></a></li>
             </ul>
         </footer>
-
-        <div id="list-add-modal" class="modal">
-            <div class="modal-back" data-deactivate="#list-add-modal"></div>
-            <div class="modal-popup">
-                <div class="modal-head">Add a new Jindo</div>
-                <div class="modal-body">Color</div>
-                <div class="modal-foot">Personality</div>
-            </div>
-        </div>
     </section>
 
 
@@ -197,10 +198,10 @@
 
     <!-- Animal PROFILE PAGE -->
     <section data-role="page" id="animal-profile-page">
-        <header data-role="header">
-            <h1>Jindo Profile</h1>
+        <!-- <header data-role="header"> </header> -->
+        <!-- <header data-role="header"> <h1></h1> -->
             <ul>
-                <li><a href="#list-page"> <img src="images/icons/goback.png" alt="" class="back"></a></li>
+                <a href="#list-page"> <img src="images/icons/goback.png" alt="" class="back"></a>
             </ul>
         </header>
         <div data-role="main2">

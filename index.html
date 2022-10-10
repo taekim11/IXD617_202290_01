@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jindo Tracker</title>
 
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="./appicon.png" type="image/x-icon">
+    <link rel="icon" sizes="240x240" href="./appicon.png">
+
     <!-- <link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css"> -->
     <link rel="stylesheet" href="src/css/app.css">
     
@@ -126,7 +131,8 @@
         <div data-role="main">
             <div class="animallist">
                 <!-- div.animallist-item*10>a[href="#animal-profile-page"]>{Animal $} -->
-                <div class="alist">Jindos</div>
+                <!-- <div class="alist">Jindos</div> -->
+                <h1>Jindos</h1>
                 <div class="animallist-item">
                     <a href="#animal-profile-page"><img src="images/jinadog.png" alt="card_image" class="dogimage"><p>Jina | San Francisco, CA</p></a>
                     <hr>
@@ -163,6 +169,7 @@
     <!-- USER PROFILE PAGE -->
     <section data-role="page" id="user-profile-page">
         <div data-role="main2">
+        <div class="animallist">
             <h1>Damien</h1>
             <img src="images/profileimage.png" alt="" class="hero-icon2">
                 <h2>Damien@gmail.com</h2>
@@ -178,6 +185,7 @@
                 <hr> 
             </div>
         </div>
+    </div>
         <footer data-role="footer">
             <ul>
                 <li><a href="#recent-page"> <img src="images/icons/compass.png" alt="" id="compass"></a></li>

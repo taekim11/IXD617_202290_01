@@ -213,6 +213,10 @@ hr {
     width: 70vw;
     aspect-ratio: 1 / 1;
 }
+.hero-icon2 {
+    width: 60vw;
+    aspect-ratio: 1 / 1;
+}
 
 
 .map {

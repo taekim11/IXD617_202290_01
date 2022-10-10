@@ -128,9 +128,6 @@ h1 {
     display:block;
 }
 
-.animallist-item {
-    
-}
 
 
 /* Basic layout tools */
@@ -345,6 +342,7 @@ h1 {
     background-color: #3A3845;
     padding: 0.5em 1em;
     color: #F3EBDE;
+    text-align: center;
 }
 .modal-body {
     background-color: #3A3845;
@@ -375,3 +373,15 @@ h1 {
     margin-left: -30px;
 }
 
+
+/* ANIMAL PROFILE */
+.animallist-item {
+    background: #484655;
+    text-align: center;
+    border-radius: 1em;
+}
+.dogimage {
+    margin:10px;
+    width:260px;
+    margin-bottom: 20px;
+}

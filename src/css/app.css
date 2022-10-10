@@ -41,7 +41,14 @@ h1 {
     text-align: center;
     color: #f3ebde;
     font-size: 1.5em;
+    margin-bottom: 12px;
 }
+
+hr {
+    width: 300px;
+    border: 0.4px solid #484655;
+}
+
 
 /* APP STRUCTURE */
 .ui-loader {
@@ -189,8 +196,6 @@ h1 {
 }
 
 
-
-
 #signin-form,
 #signup-form {
     padding: 1em;
@@ -220,7 +225,6 @@ h1 {
     background-position: center;
     background-size: cover;
 }
-
 
 
 /* FLOATER */
@@ -335,8 +339,6 @@ h1 {
 }
 
 
-
-
 .modal-head,
 .modal-foot {
     background-color: #3A3845;
@@ -353,8 +355,6 @@ h1 {
 }
 
 
-
-
 /* ANIMAL LIST */
 .animallist {
     height: 100%;
@@ -366,7 +366,7 @@ h1 {
 
 .info {
     text-align: left;
-    margin-left: 40px;
+    margin: 46px;
 }
 
 .back {
@@ -377,11 +377,21 @@ h1 {
 /* ANIMAL PROFILE */
 .animallist-item {
     background: #484655;
-    text-align: center;
-    border-radius: 1em;
-}
-.dogimage {
+    border-radius: 20px;
     margin:10px;
-    width:260px;
-    margin-bottom: 20px;
+    box-shadow: 0 0 18px rgb(0 0 0 / 15%);
 }
+
+.animallist-item p {
+    text-align: center;
+}
+
+.animallist-item hr {
+    color: #484655;
+}
+
+.dogimage {
+    width:338px;
+    border-radius: 20px 20px 0 0;
+}
+

@@ -10,7 +10,7 @@
 
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="shortcut icon" href="./appicon.png" type="image/x-icon">
-    <link rel="icon" sizes="240x240" href="./appicon.png">
+    <link rel="icon" sizes="260x260" href="./appicon.png">
 
     <!-- <link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css"> -->
     <link rel="stylesheet" href="src/css/app.css">
@@ -83,7 +83,7 @@
             <div class="map"></div>
 
             <div class="floater top left">
-                <a href="#" class="btn-circle2" data-activate="#recent-add-modal">☰</a>
+                <a href="#" class="btn-circle" data-activate="#recent-add-modal">☰</a>
             </div>
 
             <div class="floater bottom right">
@@ -127,12 +127,14 @@
 
     <!-- LIST PAGE -->
     <section data-role="page" id="list-page">
-        <!-- <header data-role="header"></header> -->
+            <div class="floater bottom right">
+                <a href="#adetails-page" class="btn-circle" data-activate="#adeatils-page">&plus;</a>
+            </div>
         <div data-role="main">
             <div class="animallist">
+                <h1>Jindos</h1>
                 <!-- div.animallist-item*10>a[href="#animal-profile-page"]>{Animal $} -->
                 <!-- <div class="alist">Jindos</div> -->
-                <h1>Jindos</h1>
                 <div class="animallist-item">
                     <a href="#animal-profile-page"><img src="images/jinadog.png" alt="card_image" class="dogimage"><p>Jina | San Francisco, CA</p></a>
                     <hr>
@@ -152,7 +154,6 @@
                     <a href="#animal-profile-page"><img src="images/emmadog.png" alt="card_image" class="dogimage"><p>Emma | San Jose, CA</p></a>
                     <hr>   
                 </div>
-
             </div>
         </div>
 
@@ -163,6 +164,23 @@
                 <li><a href="#user-profile-page"> <img src="images/icons/person.png" alt="" id="person"></a></li>
             </ul>
         </footer>
+
+    </section>
+
+    <!-- Animal PROFILE PAGE DETAILS -->
+    <section data-role="page" id="adetails-page">
+            <ul>
+                <a href="#list-page"> <img src="images/icons/goback.png" alt="" class="back"></a>
+            </ul>
+        <div data-role="main2">
+            <img src="images/jina.png" alt="" class="hero-icon">
+            <h2>Hi, I'm Jina!</h2>
+            <div class="info">
+                <p>Color - White</p>
+                <p>Age - 1 year old</p>
+                <p>Temperament - Loyal and Intelligent</p>
+            </div>
+        </div>
     </section>
 
 
@@ -173,19 +191,29 @@
             <h1>Damien</h1>
             <img src="images/profileimage.png" alt="" class="hero-icon2">
                 <h2>Damien@gmail.com</h2>
-            <div class="info">
-                <hr>
-                <p>Edit Profile</p>
-                <hr>
-                <p>About Jindo</p>
-                <hr>
-                <p>Help & Guides</p>
-                <hr>
-                <p><a href="#" class="js-logout">Log out</a></p>
-                <hr> 
+
+            <table id="info">
+                <tr onclick="window.location='#edit-profile';">
+                    <td href="#edit-profile">Edit Profile</td>
+                    <td> <img src="images/icons/goright.png" class="goright"> </td>
+                </tr>
+                <tr onclick="window.location='#about-jindo';">
+                    <td href="#about-jindo"> About Jindo</td>
+                    <td> <img src="images/icons/goright.png" class="goright"> </td>
+                </tr>
+                <tr onclick="window.location='#help-center';">
+                    <td href="#help-center">Help Center</td>
+                    <td> <img src="images/icons/goright.png" class="goright"> </td>
+                </tr>
+                <tr onclick="window.location='#';">
+                    <td href="#"><div class="js-logout"> Log out</td>
+                </tr>
+            </table>
             </div>
         </div>
     </div>
+
+
         <footer data-role="footer">
             <ul>
                 <li><a href="#recent-page"> <img src="images/icons/compass.png" alt="" id="compass"></a></li>
@@ -203,7 +231,6 @@
             <ul>
                 <a href="#list-page"> <img src="images/icons/goback.png" alt="" class="back"></a>
             </ul>
-        </header>
         <div data-role="main2">
             <img src="images/jina.png" alt="" class="hero-icon">
             <h2>Hi, I'm Jina!</h2>

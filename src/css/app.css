@@ -82,7 +82,7 @@ hr {
     text-align: center;
 }
 
-[data-role="header"],
+
 [data-role="footer"] {
     line-height: var(--header-height);
     height: var(--header-height);
@@ -91,6 +91,14 @@ hr {
     background-color: #484655;
     box-shadow: 0 0 18px rgb(0 0 0 / 15%);
     z-index:2;
+}
+
+[data-role="header"] {
+    line-height: 8.2em;
+    height: 7em;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
 }
 
 .ui-title {
@@ -234,7 +242,7 @@ hr {
 .floater { position:absolute; }
 .floater.top { top: 1rem; }
 .floater.right { right: 1rem; }
-.floater.bottom { bottom: 43.5rem; }
+.floater.bottom { bottom: 42.6rem; }
 .floater.left { left: 1rem; }
 
 .btn-circle {
@@ -374,10 +382,6 @@ hr {
     margin: 36px;
 }
 
-.back {
-    margin-left: -30px;
-}
-
 
 /* ANIMAL PROFILE */
 .animallist-item {
@@ -413,4 +417,14 @@ hr {
 
 #info {
     width:22em;
+}
+
+.listadd {
+    margin-left: 4px;
+    margin-top: 6px;
+    width: 34px;
+}
+
+.back {
+    width:34px;
 }

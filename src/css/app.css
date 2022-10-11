@@ -198,6 +198,20 @@ hr {
     color: #3A3845;
     font-weight: 700;
 }
+
+.form-button2 {
+    background-color: var(--color-neutral-accent);
+    border-width: 0;
+    border-radius: 1.2em;
+    padding: 0.5em 1em;
+    display: inline-block;
+    width: 84%;
+    font: inherit;
+    text-align: center;
+    color: #3A3845;
+    font-weight: 700;
+}
+
 .form-button:hover {
     text-decoration: none;
 }
@@ -427,4 +441,13 @@ hr {
 
 .back {
     width:34px;
+}
+
+.jinacolor {
+    width:38px;
+    text-align: center;
+}
+
+.jinaimage{
+    border-radius: 20px;
 }

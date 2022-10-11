@@ -117,7 +117,7 @@
             <div class="animallist">
                 <h1>Jindos</h1>
                 <div class="floater bottom right">
-                    <a href="#adetails-page" class="btn-circle"><img src="images/icons/add.png" alt="" class="listadd"></a>
+                    <a href="#addjindo-page" class="btn-circle"><img src="images/icons/add.png" alt="" class="listadd"></a>
                 </div>
 
                 <div class="animallist-item">
@@ -152,7 +152,7 @@
 
     </section>
 
-    <!-- Animal PROFILE PAGE DETAILS -->
+    <!-- ANIMAL PROFILE PAGE DETAILS -->
     <section data-role="page" id="adetails-page">
         <header data-role="header">
             <ul>
@@ -177,6 +177,7 @@
     <section data-role="page" id="user-profile-page">
         <div data-role="main2">
         <div class="animallist">
+
             <div class="floater top left">
                 <a href="#" class="btn-circle" data-activate="#recent-add-modal"><img src="images/icons/menu.png" alt="" class="back"></a>
             </div>
@@ -188,10 +189,9 @@
                     <div class="modal-body"><a href="#user-profile-page"> <img src="images/icons/justperson.png" alt="" class="smallicon"></a></div>
                     <div class="modal-body"><a href="#recent-page"> <img src="images/icons/justcompo.png" alt="" class="smallicon"></a></div>
                     <div class="modal-body">Log out</div>
-                    <div class="modal-body"></div>
-                    <div class="modal-body"></div>
                 </div>
             </div>
+
             <h1>Damien</h1>
             <img src="images/profileimage.png" alt="" class="hero-icon2">
                 <h2>Damien@gmail.com</h2>
@@ -217,7 +217,6 @@
         </div>
     </div>
 
-
         <footer data-role="footer">
             <ul>
                 <li><a href="#recent-page"> <img src="images/icons/compass.png" alt="" id="compass"></a></li>
@@ -228,7 +227,7 @@
     </section>
 
 
-    <!-- Animal PROFILE PAGE -->
+    <!-- ANIMAL SOLO PROFILE PAGE -->
     <section data-role="page" id="animal-profile-page">
             <header data-role="header">
                 <ul>
@@ -238,16 +237,41 @@
                 </ul>
             </header>
         <div data-role="main2">
-            <img src="images/jina.png" alt="" class="hero-icon">
-            <h2>Hi, I'm Jina!</h2>
+            <img src="images/jinadog.png" alt="" class="jinaimage">
+ 
+            <div> Hi, I'm Jina! <img src="images/jina.png" alt="" class="jinacolor"> </div>
+        
             <div class="info">
                 <p>Color - White</p>
                 <p>Age - 1 year old</p>
                 <p>Temperament - Loyal and Intelligent</p>
+                <p>Location - San Francisco, CA</p>
             </div>
         </div>
     </section>
 
+ <!-- ADDING JINDO-->
+ <section data-role="page" id="addjindo-page">
+    <header data-role="header">
+        <ul>
+            <li><a href="#list-page"> <img src="images/icons/goback.png" alt="" class="back"></a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#list-page"></a></li>
+        </ul>
+    </header>
+    <div data-role="main2">
+        <img src="images/empty.png" alt="" class="hero-icon">
+        <h2>Let's Add Jindo!</h2>
+        <div class="info">
+            <p>Color - ?</p>
+            <p>Age - ?</p>
+            <p>Temperament - ?</p>
+        </div>
+        <div class="form-control">
+            <input type="submit" class="form-button2" value="SAVE" data-role="none">
+        </div>
+    </div>
+</section>
 
 </body>
 </html>

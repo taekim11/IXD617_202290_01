@@ -23,7 +23,7 @@
 body {
     margin:0;
     font-family:var(--font-body);
-    background-color: #3A3845;
+    background-color: #33313C;
 }
 
 a {
@@ -452,7 +452,7 @@ input {
 }
 
 #info {
-    width:24em;
+    width:22em;
 }
 
 .listadd {

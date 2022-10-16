@@ -275,7 +275,7 @@ input {
 
 .btn-circle {
     color: inherit;
-    background-color: #3A3845;
+    background-color: #33313C;
     border-radius: 2rem;
     line-height: 3rem;
     font-size:2em;
@@ -447,13 +447,10 @@ input {
 }
 
 #info td {
-    padding: 12px;
+    padding: 10px;
     text-align: left;
 }
 
-#info {
-    width:22em;
-}
 
 .listadd {
     margin-left: 4px;

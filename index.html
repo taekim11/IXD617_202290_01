@@ -55,6 +55,11 @@
     <!-- SIGNUP PAGE -->
     <section data-role="page" id="signup-page">
         <div data-role="main" class="display-flex flex-column flex-justify-center">
+            
+            <div class="flex-stretch signin-hero">
+                <img src="images/all.png" alt="" class="hero-icon">
+            </div>
+
             <form class="form" id="signup-form" data-ajax="false">
                 <div class="form-control">
                     <label class="form-label" for="signup-username">Username</label>
@@ -85,7 +90,7 @@
             <div class="map"></div>
 
             <div class="floater bottom right">
-                <a href="#" class="btn-circle" data-activate="#list-add-modal"><img src="images/icons/listadd.png" alt="" class="listadd"></a>
+                <a href="#addjindo-page" class="btn-circle"><img src="images/icons/listadd.png" alt="" class="listadd"></a>
             </div>
         </div>
 
@@ -96,51 +101,42 @@
                 <li><a href="#user-profile-page"> <img src="images/icons/person.png" alt="" id="person"></a></li>
             </ul>
         </footer>
-
-        <div id="list-add-modal" class="modal">
-            <div class="modal-back" data-deactivate="#list-add-modal"></div>
-            <div class="modal-popup">
-                <div class="modal-head">Head</div>
-                <div class="modal-body">Body</div>
-                <div class="modal-foot">Foot</div>
-            </div>
-        </div>
    
-
     </section>
 
 
     <!-- LISTS PAGE -->
     <section data-role="page" id="list-page">
-
+        <h1>Jindos</h1>
         <div data-role="main">
             <div class="animallist">
-                <h1>Jindos</h1>
-                <div class="floater bottom right">
-                    <a href="#addjindo-page" class="btn-circle"><img src="images/icons/add.png" alt="" class="listadd"></a>
-                </div>
-
                 <div class="animallist-item">
                     <a href="#animal-profile-page"><img src="images/jinadog.png" alt="card_image" class="dogimage"><p>Jina | San Francisco, CA</p></a>
-                    <hr>
                 </div>
-    
                 <div class="animallist-item">
                     <a href="#animal-profile-page"><img src="images/leodog.png" alt="card_image" class="dogimage"><p>Neo | Berkeley, CA</p></a> 
-                    <hr>
                 </div>
-
                 <div class="animallist-item">
                     <a href="#animal-profile-page"><img src="images/doridog.png" alt="card_image" class="dogimage"><p>Dori | Oakland, CA</p></a>  
-                    <hr>   
                 </div>
-
                 <div class="animallist-item">
                     <a href="#animal-profile-page"><img src="images/emmadog.png" alt="card_image" class="dogimage"><p>Emma | San Jose, CA</p></a>
-                    <hr>   
+                </div>
+                <div class="animallist-item">
+                    <a href="#animal-profile-page"><img src="images/jinadog.png" alt="card_image" class="dogimage"><p>Jina | San Francisco, CA</p></a>
+                </div>
+                <div class="animallist-item">
+                    <a href="#animal-profile-page"><img src="images/leodog.png" alt="card_image" class="dogimage"><p>Neo | Berkeley, CA</p></a> 
+                </div>
+                <div class="animallist-item">
+                    <a href="#animal-profile-page"><img src="images/doridog.png" alt="card_image" class="dogimage"><p>Dori | Oakland, CA</p></a>  
+                </div>
+                <div class="animallist-item">
+                    <a href="#animal-profile-page"><img src="images/emmadog.png" alt="card_image" class="dogimage"><p>Emma | San Jose, CA</p></a>
                 </div>
             </div>
         </div>
+    </div>
 
         <footer data-role="footer">
             <ul>
@@ -155,12 +151,11 @@
     <!-- USER PROFILE PAGE -->
     <section data-role="page" id="user-profile-page">
         <div data-role="main2">
-        <div class="animallist">
-
+        <div class="userprofile">
+            <img src="images/profileimage.png" alt="" class="hero-icon2">
             <div class="floater bottom right">
-                <a href="#" class="btn-circle" data-activate="#recent-add-modal"><img src="images/icons/chat.png" alt="" class="back"></a>
+                <a href="#" class="btn-circle" data-activate="#recent-add-modal"><img src="images/icons/chat.png" alt="" class=""></a>
             </div>
-
             <div id="recent-add-modal" class="modal">
                 <div class="modal-back transparent" data-deactivate="#recent-add-modal"></div>
                 <div class="modal-drawer right">
@@ -168,10 +163,8 @@
                     <div class="modal-body">How Can I Help You?</div>
                 </div>
             </div>
-
             <h1>Damien</h1>
-            <img src="images/profileimage.png" alt="" class="hero-icon2">
-                <h2>Damien@gmail.com</h2>
+            <p>Damien@gmail.com</p>
 
             <table id="info">
                 <tr onclick="window.location='#edit-profile';">
@@ -193,7 +186,6 @@
             </div>
         </div>
     </div>
-
         <footer data-role="footer">
             <ul>
                 <li><a href="#recent-page"> <img src="images/icons/compass.png" alt="" id="compass"></a></li>
@@ -211,18 +203,18 @@
     <section data-role="page" id="animal-profile-page">
             <header data-role="header">
                 <ul>
-                    <li><a href="#list-page"> <img src="images/icons/goback.png" alt="" class="back"></a></li>
+                    <li><a href="#list-page"> <img src="images/icons/goback.png" alt="" class="listadd"></a></li>
                     <li class="flex-stretch"></li>
-                    <li><a href="#list-page"> <img src="images/icons/edit.png" alt="" class="back"></a></li>
+                    <li><a href="#list-page"> <img src="images/icons/edit.png" alt="" class="listadd"></a></li>
                 </ul>
             </header>
         <div data-role="main2">
             <img src="images/jinadog.png" alt="" class="jinaimage">
  
-            <div> Hi, I'm Jina! <img src="images/jina.png" alt="" class="jinacolor"> </div>
+            <h1> Hi, I'm Jina! </h1>
         
             <div class="info">
-                <p>Color - White</p>
+                <p>Color - White </p>
                 <p>Age - 1 year old</p>
                 <p>Temperament - Loyal and Intelligent</p>
                 <p>Location - San Francisco, CA</p>
@@ -234,23 +226,35 @@
  <section data-role="page" id="addjindo-page">
     <header data-role="header">
         <ul>
-            <li><a href="#list-page"> <img src="images/icons/goback.png" alt="" class="back"></a></li>
+            <li><a href="#recent-page"> <img src="images/icons/goback.png" alt="" class="listadd"></a></li>
             <li class="flex-stretch"></li>
-            <li><a href="#list-page"></a></li>
+            <li><a href="#recent-page"></a></li>
         </ul>
     </header>
-    <div data-role="main2">
-        <img src="images/empty.png" alt="" class="hero-icon">
-        <h2>Let's Add Jindo!</h2>
-        <div class="info">
-            <p>Color - ?</p>
-            <p>Age - ?</p>
-            <p>Temperament - ?</p>
+    <div data-role="main3">
+        <div><img src="images/empty.png" alt="" class="hero-icon"></div>
+        <h1>Let's Add Jindo!</h1>
+
+    <div class="select-group">
+        <label class="form-label3" for="">1. What color is the Jindo?</label>
+        <hr>
+        <div id="dropdown" class="dropdown hidden">
+            <label class="select-item" for=""><img src="images/color1.png" alt="" class="back"></label>    
+            <label class="select-item" for=""><img src="images/color2.png" alt="" class="back"></label>    
+            <label class="select-item" for=""><img src="images/color3.png" alt="" class="back"></label>   
+            <label class="select-item" for=""><img src="images/color4.png" alt="" class="back"></label>
+            <hr>
         </div>
-        <div class="form-control">
-            <input type="submit" class="form-button2" value="SAVE" data-role="none">
-        </div>
+            <label class="form-label3" for="">2. How is his or her personality like?</label>
+            <input class="form-input2" id="" type="" name="where" value="">
+            <label class="form-label3" for="">3. Where did you find Jindo?</label>
+            <input class="form-input2" id="" type="" name="where" value="">
     </div>
+    <div class="form-control">
+        <input type="submit" class="form-button2" value="SAVE" data-role="none">
+    </div>
+
+</div>
 </section>
 
 </body>

@@ -23,7 +23,7 @@
 body {
     margin:0;
     font-family:var(--font-body);
-    background-color: #33313C;
+    background-color: #26252D;
 }
 
 a {
@@ -52,8 +52,9 @@ h2 {
 }
 
 hr {
-    width: 294px;
-    border: 0.4px solid #484655;
+    width: 400px;
+    border: 0.2px solid;
+    color: #26252D;
 }
  
 
@@ -89,13 +90,19 @@ hr {
     text-align: center;
 }
 
+[data-role="main3"] {
+    flex: 1 1 100%;
+    color: #f3ebde;
+    text-align: center;
+}
+
 
 [data-role="footer"] {
     line-height: var(--header-height);
     height: var(--header-height);
     position:relative;
     overflow:hidden;
-    background-color: #484655;
+    background-color: #3A3845;
     box-shadow: 0 0 18px rgb(0 0 0 / 15%);
     z-index:2;
 }
@@ -170,6 +177,9 @@ hr {
 
 
 /* FORMS */
+.dropdown {
+    justify-content: center;
+}
 .form-control {
     margin: 1em 0;
     color: var(--color-neutral-light);
@@ -178,12 +188,18 @@ hr {
     font-size: 0.8em;
     color: var(--color-neutral-light);
     display: block;
-    margin-bottom: 0.5em;
+}
+.form-label3 {
+    font-size: 1em;
+    color: var(--color-neutral-light);
+    display: block;
+    text-align: left;
+    margin-left:40px
 }
 .form-input {
-    background-color: #555264;
+    background-color: #3A3845;
     border-width: 1px;
-    border-color: #555264;
+    border-color: #3A3845;
     border-style: solid;
     border-radius: 1.2em;
     padding: 0.5em 1em;
@@ -193,7 +209,19 @@ hr {
     color: white;
     letter-spacing: 1px;
 }
-
+.form-input2 {
+    background-color: #3A3845;
+    border-width: 1px;
+    border-color: #3A3845;
+    border-style: solid;
+    border-radius: 1.2em;
+    padding: 0.5em 1em;
+    display: inline-block;
+    width: 84%;
+    font: inherit;
+    color: white;
+    letter-spacing: 1px;
+}
 input {
     width:50%;
     display: block;
@@ -209,7 +237,7 @@ input {
     width: 100%;
     font: inherit;
     text-align: center;
-    color: #3A3845;
+    color: #26252D;
     font-weight: 700;
 }
 
@@ -222,7 +250,7 @@ input {
     width: 84%;
     font: inherit;
     text-align: center;
-    color: #3A3845;
+    color: #26252D;
     font-weight: 700;
 }
 
@@ -231,12 +259,15 @@ input {
 }
 
 
-#signin-form,
-#signup-form {
+#signin-form {
     padding: 1em;
     margin-bottom:6em;
 }
 
+#signup-form {
+    padding: 1em;
+    margin-bottom:3em;
+}
 
 .signin-hero {
     display:flex;
@@ -251,6 +282,7 @@ input {
 .hero-icon2 {
     width: 60vw;
     aspect-ratio: 1 / 1;
+    margin-top: 50px;
 }
 
 
@@ -275,7 +307,7 @@ input {
 
 .btn-circle {
     color: inherit;
-    background-color: #33313C;
+    background-color: #26252D;
     border-radius: 2rem;
     line-height: 3rem;
     font-size:2em;
@@ -286,7 +318,7 @@ input {
     /*box-shadow: 0.1em 0.1em 0.5em rgba(0,0,0,0.2);*/
 }
 .btn-circle2 {
-    color: #3A3845;
+    color: #26252D;
     border-radius: 2rem;
     line-height: 3rem;
     font-size:2em;
@@ -420,36 +452,54 @@ input {
 
 
 /* ANIMAL PROFILE */
+.animallist {
+    position: relative;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1em;
+    gap: 1rem 1rem;
+    align-items: center;
+}
+
 .animallist-item {
-    background: #484655;
-    border-radius: 20px;
-    margin:10px;
-    box-shadow: 0 0 18px rgb(0 0 0 / 15%);
+    background-color: #3A3845;
+    border-radius: 10px;
 }
 
 .animallist-item p {
     text-align: center;
-}
-
-.animallist-item hr {
-    color: #484655;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
 }
 
 .dogimage {
-    width:338px;
-    border-radius: 20px 20px 0 0;
+    width:171px;
+    border-radius: 10px 10px 0 0;
 }
 
 /* USER PROFILE */
+.userprofile {
+    height: 100%;
+    position: relative;
+    padding: 1em;
+
+}
 .goright {
     width: 20px;
-    margin-left: 194px;
+    margin-left: 196px;
 }
 
 #info td {
-    padding: 10px;
+    padding: 13px;
     text-align: left;
 }
+
+#info {
+    align-items: center;
+}
+
 
 
 .listadd {
@@ -459,7 +509,8 @@ input {
 }
 
 .back {
-    width:34px;
+    width:68px;
+    border-radius: 50%;
 }
 
 .jinacolor {
@@ -468,5 +519,9 @@ input {
 }
 
 .jinaimage{
-    border-radius: 20px;
+    border-radius: 10px;
+}
+
+.js-logout {
+    text-align: left;
 }

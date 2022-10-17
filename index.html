@@ -45,12 +45,33 @@
                     <input type="submit" class="form-button" value="Log In" data-role="none">
                 </div>
                 <div class="form-control" style="text-align:center; font-size: 0.8em">
-                    Don't have an account? <a href="#signup-page">Sign Up!</a>
+                    Don't have an account? <a href="#onboarding-page">Sign Up!</a>
                 </div>
             </form>
         </div>
     </section>
 
+    <!-- ONBOARDING PAGE -->
+
+    <section data-role="page" id="onboarding-page">
+        <header data-role="header">
+            <div class="" style="text-align:right; font-size: 1.4em; margin-right: 10px;">
+                <a href="#signup-page">Skip</a>
+            </div>
+        </header>
+        <div data-role="main" class="display-flex flex-column">
+            <div class="flex-stretch onboarding-hero">
+                <img src="images/trackthem.png" alt="" style="width:20em;">
+            </div>
+            <form class="form" id="signin-form" data-ajax="false">
+                
+                <div class="form-control">
+                    <a href="#signup-page"><input type="submit" class="form-button" value="Get Started" data-role="none"></a>
+                </div>
+
+            </form>
+        </div>
+    </section>
 
     <!-- SIGNUP PAGE -->
     <section data-role="page" id="signup-page">
@@ -76,7 +97,7 @@
                 <div class="form-control">
                     <input type="submit" class="form-button" value="Sign Up" data-role="none">
                 </div>
-                <div class="form-control" style="text-align:center; font-size: 0.7em">
+                <div class="form-control" style="text-align:center; font-size: 0.8em">
                     Already have an account? <a href="#signin-page">Sign In!</a>
                 </div>
             </form>

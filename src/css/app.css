@@ -275,6 +275,12 @@ input {
     justify-content: flex-end;
     align-items: center;
 }
+.onboarding-hero {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
 .hero-icon {
     width: 70vw;
     aspect-ratio: 1 / 1;

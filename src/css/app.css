@@ -486,6 +486,9 @@ input {
 }
 
 /* USER PROFILE */
+.chat {
+    width:34px;
+}
 .userprofile {
     height: 100%;
     position: relative;

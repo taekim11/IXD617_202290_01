@@ -439,10 +439,11 @@ input {
 }
 .modal-body {
     background-color: #3A3845;
-    padding: 1em;
+    padding: 2em;
     flex: 1 1 100%;
     overflow: auto;
     color: #ffffff;
+    text-align: left;
 }
 
 
@@ -537,4 +538,5 @@ input {
 
 .js-logout {
     text-align: left;
+    color: #a5a5a5;
 }

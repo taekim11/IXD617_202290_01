@@ -35,7 +35,7 @@
                 <div class="warning"></div>
                 <div class="form-control">
                     <label class="form-label" for="signin-username">Username</label>
-                    <input class="form-input" type="text" id="signin-username" data-role="none" placeholder="you@gmail.com">
+                    <input class="form-input" type="text" id="signin-username" data-role="none" placeholder="your username">
                 </div>
                 <div class="form-control">
                     <label class="form-label" for="signin-password">Password</label>
@@ -55,9 +55,11 @@
 
     <section data-role="page" id="onboarding-page">
         <header data-role="header">
-            <div class="" style="text-align:right; font-size: 1.2em; margin-right: 8px;">
-                <a href="#signup-page">Skip</a>
-            </div>
+            <ul>
+                <li><a href="#signin-page"> <img src="images/icons/goback.png" alt="" class="listadd"></a></li>
+                <li class="flex-stretch"></li>
+                <li><a href="#signup-page"> <img src="images/icons/skip.png" alt="" class="listadd"></a></li>
+            </ul>
         </header>
         <div data-role="main" class="display-flex flex-column">
             <div class="flex-stretch onboarding-hero">
@@ -77,9 +79,11 @@
 
 <section data-role="page" id="onboarding-page2">
     <header data-role="header">
-        <div class="" style="text-align:right; font-size: 1.2em; margin-right: 8px;">
-            <a href="#signup-page">Skip</a>
-        </div>
+        <ul>
+            <li><a href="#onboarding-page"> <img src="images/icons/goback.png" alt="" class="listadd"></a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#signup-page"> <img src="images/icons/skip.png" alt="" class="listadd"></a></li>
+        </ul>
     </header>
     <div data-role="main" class="display-flex flex-column">
         <div class="flex-stretch onboarding-hero">
@@ -106,7 +110,7 @@
             <form class="form" id="signup-form" data-ajax="false">
                 <div class="form-control">
                     <label class="form-label" for="signup-username">Username</label>
-                    <input class="form-input" type="text" id="signup-username" data-role="none" placeholder="you@gmail.com">
+                    <input class="form-input" type="text" id="signup-username" data-role="none" placeholder="your username">
                 </div>
                 <div class="form-control">
                     <label class="form-label" for="signup-password">Type a Password</label>
@@ -131,17 +135,16 @@
     <section data-role="page" id="recent-page">
         <div data-role="main">
             <div class="map"></div>
-
             <div class="floater bottom right">
-                <a href="#addjindo-page" class="btn-circle"><img src="images/icons/listadd.png" alt="" class="listadd"></a>
+                <a href="#addjindo-page" class="btn-circle"><img src="images/icons/listadd2.png" alt="" class="listadd"></a>
             </div>
         </div>
 
         <footer data-role="footer">
             <ul>
-                <li><a href="#recent-page"> <img src="images/icons/compasson.png" alt="" id="compass"></a></li>
-                <li><a href="#list-page"> <img src="images/icons/paw.png" alt="" id="paw"></a></li>
-                <li><a href="#user-profile-page"> <img src="images/icons/person.png" alt="" id="person"></a></li>
+                <li><a href="#recent-page"> <img src="images/icons/compasson.png" alt="" class="nav"></a></li>
+                <li><a href="#list-page"> <img src="images/icons/paw.png" alt="" class="nav"></a></li>
+                <li><a href="#user-profile-page"> <img src="images/icons/person.png" alt="" class="nav"></a></li>
             </ul>
         </footer>
    
@@ -150,7 +153,13 @@
 
     <!-- LISTS PAGE -->
     <section data-role="page" id="list-page">
-        <h1>Jindos</h1>
+        <header data-role="header">
+            <ul>
+                    <li><a href="#list-page"> <img src="images/icons/backhidden.png" alt="" class="listadd"></a></li>
+                    <li class="flex-stretch"></li>
+                    <li><a href="#addjindo-page"> <img src="images/icons/listaddyellow.png" alt="" class="listadd"></a></li>
+            </ul>
+        </header>
         <div data-role="main">
             <div class="animallist">
                 <div class="animallist-item">
@@ -183,9 +192,9 @@
 
         <footer data-role="footer">
             <ul>
-                <li><a href="#recent-page"> <img src="images/icons/compass.png" alt="" id="compass"></a></li>
-                <li><a href="#list-page"> <img src="images/icons/pawon.png" alt="" id="paw"></a></li>
-                <li><a href="#user-profile-page"> <img src="images/icons/person.png" alt="" id="person"></a></li>
+                <li><a href="#recent-page"> <img src="images/icons/compass.png" alt="" class="nav"></a></li>
+                <li><a href="#list-page"> <img src="images/icons/pawon.png" alt="" class="nav"></a></li>
+                <li><a href="#user-profile-page"> <img src="images/icons/person.png" alt="" class="nav"></a></li>
             </ul>
         </footer>
 
@@ -193,20 +202,27 @@
 
     <!-- USER PROFILE PAGE -->
     <section data-role="page" id="user-profile-page">
+        <header data-role="header">
+            <ul>
+                    <li><a href="#"> <img src="images/icons/backhidden.png" alt="" class="listadd"></a></li>
+                    <li class="flex-stretch"></li>
+                    <li><a href="#"> <img src="images/icons/chatyellow.png" alt="" class="listadd"></a></li>
+            </ul>
+        </header>
         <div data-role="main2">
         <div class="userprofile">
             <img src="images/profileimage.png" alt="" class="hero-icon2">
-            <div class="floater bottom right">
-                <a href="#" class="btn-circle" data-activate="#recent-add-modal"><img src="images/icons/chat.png" alt="" class="chat"></a>
-            </div>
             <div id="recent-add-modal" class="modal">
                 <div class="modal-back transparent" data-deactivate="#recent-add-modal"></div>
                 <div class="modal-drawer right">
                     <div class="modal-head">Hi Damien!</div>
-                    <div class="modal-body">How Can I Help You?</div>
+                    <div class="modal-body">How Can We Help You?</div>
                     <div class="modal-body">1. Help with your account?</div>
                     <div class="modal-body">2. Trouble with tracking?</div>
                     <div class="modal-body">3. Talk with an agent.</div>
+                    <div class="modal-body"></div>
+                    <div class="modal-body"></div>
+                    <div class="modal-body"></div>
                 </div>
             </div>
             <h1>Damien</h1>
@@ -234,9 +250,9 @@
     </div>
         <footer data-role="footer">
             <ul>
-                <li><a href="#recent-page"> <img src="images/icons/compass.png" alt="" id="compass"></a></li>
-                <li><a href="#list-page"> <img src="images/icons/paw.png" alt="" id="paw"></a></li>
-                <li><a href="#user-profile-page"> <img src="images/icons/personon.png" alt="" id="person"></a></li>
+                <li><a href="#recent-page"> <img src="images/icons/compass.png" alt="" class="nav"></a></li>
+                <li><a href="#list-page"> <img src="images/icons/paw.png" alt="" class="nav"></a></li>
+                <li><a href="#user-profile-page"> <img src="images/icons/personon.png" alt="" class="nav"></a></li>
             </ul>
         </footer>
     </section>
@@ -260,11 +276,11 @@
             <h1> Hi, I'm Jina! </h1>
         
             <div class="info">
-                <p>Color - White </p>
+                <p>Color - I am fluffy White.</p>
                 <hr>
-                <p>Temperament - Loyal and Intelligent</p>
+                <p>Temperament - I am Loyal and Intelligent!</p>
                 <hr>
-                <p>Location - San Francisco, CA</p>
+                <p>Location - San Francisco, CA.</p>
             </div>
         </div>
     </section>

@@ -32,7 +32,6 @@
                 <img src="images/jindo.png" alt="" class="hero-icon">
             </div>
             <form class="form" id="signin-form" data-ajax="false">
-                <div class="warning"></div>
                 <div class="form-control">
                     <label class="form-label" for="signin-username">Username</label>
                     <input class="form-input" type="text" id="signin-username" data-role="none" placeholder="your username">
@@ -40,6 +39,9 @@
                 <div class="form-control">
                     <label class="form-label" for="signin-password">Password</label>
                     <input class="form-input" type="password" id="signin-password" data-role="none" placeholder="your password">
+                </div>
+                <div class="warning" style="display:none;">
+                    <p>Wrong email or password, please try again.</p>
                 </div>
                 <div class="form-control">
                     <input type="submit" class="form-button" value="Log In" data-role="none">

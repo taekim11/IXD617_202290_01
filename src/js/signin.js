@@ -5,18 +5,21 @@ const checkSigninForm = () => {
     console.log(userval, passval)
 
     if (userval === "user" && passval === "pass") {
-        // Logged In
+
         console.log("Success");
-        sessionStorage.userId = 3;
+        sessionStorage.userId = 1;
 
         $("#signin-form")[0].reset();
     } else {
         // Not Logged In
         console.log("Failure");
+
+        // If not logged in, erase sessionStorage.userId.
+        // Thus, sessionStorage.userId = undefined.
         sessionStorage.removeItem("userId");
 
-        $(".warning").html("");
-        setTimeout(()=>{$(".warning").html("");},3000)
+        $(".warning").css("display", "block");
+        setTimeout(()=>{$(".warning").css("display", "none");},3000)
     }
 
     checkUserId();

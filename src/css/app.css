@@ -545,3 +545,10 @@ input {
     text-align: left;
     color: var(--color-neutral-light);
 }
+
+.warning p {
+    color: rgb(255, 92, 64);
+    font-weight: 300;
+    text-align: left;
+    font-size: 14px;
+}

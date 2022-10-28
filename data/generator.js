@@ -5,9 +5,9 @@ const getdate = (d1,d2) => dayjs(new Date(chance.natural({min:d1,max:d2}))).form
 
 const animaltype = (type) => {
     let types = {
-        'dog':['poodle','pug','pitbull'],
-        'cat':['calico','ginger','siamese','fat','stray'],
-        'horse':['black','brown','unicorn']
+        'color':['white','orange','black'],
+        'personality':['loyal','fun','shy','charismatic','curious'],
+        'size':['small','medium','large']
     }
     return chance.pickone(types[type]);
 }
@@ -29,8 +29,8 @@ const getAnimals = () => (new Array(50)).fill(0).map((o,i)=>{
     o.id = i + 1;
     o.user_id = chance.natural({min:1, max:10});
     o.name = chance.first();
-    o.type = chance.pickone(['dog','cat','horse']);
-    o.breed = animaltype(o.type);
+    o.type = chance.pickone(['color','personality','size']);
+    o.personality = animaltype(o.type);
     o.description = chance.sentence();
     o.img = `https://via.placeholder.com/${num()}x${num()}/${hex()}/fff/?text=${o.name}`;
     o.date_create = getdate(Date.parse('2020/01/01'),Date.now());

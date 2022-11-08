@@ -1,32 +1,35 @@
-const checkSigninForm = () => {
+import { query } from "./functions.js";
+
+
+export const checkSigninForm = async() => {
     const userval = $("#signin-username").val();
     const passval = $("#signin-password").val();
 
-    console.log(userval, passval)
+    let founduser = await query({
+        type: 'check_signin',
+        params: [userval,passval]
+    });
 
-    if (userval === "user" && passval === "pass") {
-
+    if (founduser.result.length > 0) {
+        // Logged In
         console.log("Success");
-        sessionStorage.userId = 1;
+        sessionStorage.userId = founduser.result[0].id;
 
         $("#signin-form")[0].reset();
     } else {
         // Not Logged In
         console.log("Failure");
-
-        // If not logged in, erase sessionStorage.userId.
-        // Thus, sessionStorage.userId = undefined.
         sessionStorage.removeItem("userId");
 
-        $(".warning").css("display", "block");
-        setTimeout(()=>{$(".warning").css("display", "none");},3000)
+        $(".warning").html("");
+        setTimeout(()=>{$(".warning").html("");},3000)
     }
 
     checkUserId();
 }
 
 
-const checkUserId = () => {
+export const checkUserId = () => {
     const pages = ["#signin-page", "#signup-page", ""];
 
     if (sessionStorage.userId === undefined) {
@@ -41,4 +44,3 @@ const checkUserId = () => {
         }
     }
 }
-

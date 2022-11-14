@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="src/css/app.css">
     
     <script src="lib/js/jquery-2.2.4.min.js"></script>
-    <script src="src/js/app.js"></script>
+    <script src="src/js/app.js" type="module"></script>
     <script src="src/js/signin.js"></script>
     <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -274,20 +274,20 @@
                     <li><a href="#list-page"> <img src="images/icons/edit.png" alt="" class="listadd"></a></li>
                 </ul>
             </header>
-        <div data-role="main2">
-            <img src="images/jinadog.png" alt="" class="jinaimage">
- 
-            <h1> Hi, I'm Jina! </h1>
-        
-            <div class="info">
-                <p>Color - I am fluffy White.</p>
-                <hr>
-                <p>Temperament - I am Loyal and Intelligent!</p>
-                <hr>
-                <p>Location - San Francisco, CA.</p>
+            <div data-role="main">
+                <div class="animal-profile-top"></div>
+                <div class="animal-profile-nav">
+                    <div class="nav-link active">Map</div>
+                    <div class="nav-link">Description</div>
+                </div>
+                <div class="animal-profile-bottom">
+                    <div class="animal-profile-section section-map active">
+                        <div class="map"></div>
+                    </div>
+                    <div class="animal-profile-section section-description"></div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
  <!-- ADDING JINDO-->
  <section data-role="page" id="addjindo-page">

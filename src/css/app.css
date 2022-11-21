@@ -101,7 +101,7 @@ hr {
     height: var(--header-height);
     position:relative;
     overflow:hidden;
-    background-color: #3A3845;
+    background-color: #34323E;
     box-shadow: 0 0 18px rgb(0 0 0 / 15%);
     z-index:2;
 }
@@ -200,9 +200,9 @@ hr {
     margin-left:40px
 }
 .form-input {
-    background-color: #3A3845;
+    background-color: #34323E;
     border-width: 1px;
-    border-color: #3A3845;
+    border-color: #34323E;
     border-style: solid;
     border-radius: 1.2em;
     padding: 0.5em 1em;
@@ -213,9 +213,9 @@ hr {
     letter-spacing: 1px;
 }
 .form-input2 {
-    background-color: #3A3845;
+    background-color: #34323E;
     border-width: 1px;
-    border-color: #3A3845;
+    border-color: #34323E;
     border-style: solid;
     border-radius: 1.2em;
     padding: 0.5em 1em;
@@ -432,7 +432,7 @@ input {
 
 .modal-head,
 .modal-foot {
-    background-color: #3A3845;
+    background-color: #34323E;
     padding: 1em 1em;
     color: #ffffff;
     text-align: center;
@@ -440,7 +440,7 @@ input {
     letter-spacing: 1px;
 }
 .modal-body {
-    background-color: #3A3845;
+    background-color: #34323E;
     padding: 2em;
     flex: 1 1 100%;
     overflow: auto;
@@ -494,6 +494,7 @@ input {
     font-weight: normal;
     color: inherit;
     align-items: center;
+    background-color: #34323E;
 }
 
 .animallist-image img {

@@ -1,3 +1,4 @@
+
 // Promise
 export const query = (options) => {
     return fetch('data/api.php', {

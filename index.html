@@ -30,20 +30,21 @@
 </head>
 <body>
 
-    <!-- SIGNIN PAGE -->
+<!-- SIGNIN PAGE -->
     <section data-role="page" id="signin-page">
         <div data-role="main" class="display-flex flex-column">
             <div class="flex-stretch signin-hero">
                 <img src="images/jindo.png" alt="" class="hero-icon">
             </div>
             <form class="form" id="signin-form" data-ajax="false">
+                <div class="warning"></div>
                 <div class="form-control">
                     <label class="form-label" for="signin-username">Username</label>
-                    <input class="form-input" type="text" id="signin-username" data-role="none" placeholder="your username">
+                    <input class="form-input" type="text" id="signin-username" data-role="none" placeholder="Enter your username">
                 </div>
                 <div class="form-control">
                     <label class="form-label" for="signin-password">Password</label>
-                    <input class="form-input" type="password" id="signin-password" data-role="none" placeholder="your password">
+                    <input class="form-input" type="password" id="signin-password" data-role="none" placeholder="Enter your password">
                 </div>
                 <div class="warning" style="display:none;">
                     <p>Wrong email or password, please try again.</p>
@@ -58,8 +59,42 @@
         </div>
     </section>
 
-    <!-- ONBOARDING PAGE -->
+<!-- SIGNUP PAGE -->
+<section data-role="page" id="signup-page">
+    <div data-role="main" class="display-flex flex-column flex-justify-center">
+        
+        <div class="flex-stretch signin-hero">
+            <img src="images/all.png" alt="" class="hero-icon">
+        </div>
 
+        <form class="form" id="signup-form" data-ajax="false">
+            <div class="form-control">
+                <label class="form-label" for="signup-username">Username</label>
+                <input class="form-input" type="text" id="signup-username" data-role="none" placeholder="Enter your username">
+            </div>
+            <div class="form-control">
+                <label class="form-label" for="signup-email">Email</label>
+                <input class="form-input" type="email" id="signup-email" data-role="none" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-control">
+                <label class="form-label" for="signup-password">Enter Password</label>
+                <input class="form-input" type="password" id="signup-password" data-role="none" placeholder="password (4 characters or more)">
+            </div>
+            <div class="form-control">
+                <label class="form-label" for="signup-confirm">Confirm Password</label>
+                <input class="form-input" type="password" id="signup-confirm" data-role="none" placeholder="password (4 characters or more)">
+            </div>
+            <div class="form-control">
+                <input type="submit" class="form-button" value="Sign Up" data-role="none">
+            </div>
+            <div class="form-control" style="text-align:center; font-size: 0.8em">
+                Already have an account? <a href="#signin-page">Sign In!</a>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- ONBOARDING PAGE -->
     <section data-role="page" id="onboarding-page">
         <header data-role="header">
             <ul>
@@ -77,13 +112,11 @@
                 <div class="form-control">
                     <a href="#onboarding-page2"><input type="submit" class="form-button" value="Next" data-role="none"></a>
                 </div>
-
             </form>
         </div>
     </section>
 
-<!-- ONBOARDING PAGE 2-->
-
+<!-- ONBOARDING PAGE TWO-->
 <section data-role="page" id="onboarding-page2">
     <header data-role="header">
         <ul>
@@ -106,44 +139,21 @@
     </div>
 </section>
 
-    <!-- SIGNUP PAGE -->
-    <section data-role="page" id="signup-page">
-        <div data-role="main" class="display-flex flex-column flex-justify-center">
-            
-            <div class="flex-stretch signin-hero">
-                <img src="images/all.png" alt="" class="hero-icon">
-            </div>
 
-            <form class="form" id="signup-form" data-ajax="false">
-                <div class="form-control">
-                    <label class="form-label" for="signup-username">Username</label>
-                    <input class="form-input" type="text" id="signup-username" data-role="none" placeholder="your username">
-                </div>
-                <div class="form-control">
-                    <label class="form-label" for="signup-password">Type a Password</label>
-                    <input class="form-input" type="password" id="signup-password" data-role="none" placeholder="password (4 characters or more)">
-                </div>
-                <div class="form-control">
-                    <label class="form-label" for="signup-confirm">Confirm Password</label>
-                    <input class="form-input" type="password" id="signup-confirm" data-role="none" placeholder="password (4 characters or more)">
-                </div>
-                <div class="form-control">
-                    <input type="submit" class="form-button" value="Sign Up" data-role="none">
-                </div>
-                <div class="form-control" style="text-align:center; font-size: 0.8em">
-                    Already have an account? <a href="#signin-page">Sign In!</a>
-                </div>
-            </form>
-        </div>
-    </section>
-
-
-    <!-- RECENT PAGE -->
+<!-- RECENT PAGE -->
     <section data-role="page" id="recent-page">
         <div data-role="main">
             <div class="map"></div>
+
             <div class="floater bottom right">
                 <a href="#addjindo-page" class="btn-circle"><img src="images/icons/listadd2.png" alt="" class="listadd"></a>
+            </div>
+
+            <div id="map-recent-modal" class="modal">
+                <div class="modal-back transparent" data-deactivate="#map-recent-modal"></div>
+                <div class="modal-drawer island top">
+                    <div class="modal-body"></div>
+                </div>
             </div>
         </div>
 
@@ -158,7 +168,7 @@
     </section>
 
 
-    <!-- LISTS PAGE -->
+<!-- LISTS PAGE -->
     <section data-role="page" id="list-page">
         <header data-role="header">
             <ul>
@@ -207,7 +217,7 @@
 
     </section>
 
-    <!-- USER PROFILE PAGE -->
+<!-- USER PROFILE PAGE -->
     <section data-role="page" id="user-profile-page">
         <header data-role="header">
             <ul>
@@ -264,7 +274,7 @@
         </footer>
     </section>
 
-    <!-- JINA SOLO PROFILE PAGE -->
+<!-- JINA SOLO PROFILE PAGE -->
     <section data-role="page" id="animal-profile-page">
             <header data-role="header">
                 <ul>
@@ -319,6 +329,59 @@
     <div class="form-control">
         <input type="submit" class="form-button2" value="SAVE" data-role="none">
     </div>
+
+    
+<!-- CHOOSE ANIMAL PAGE -->
+    <section data-role="page" id="choose-animal-page">
+        <header data-role="header">
+            <h1>Choose animal</h1>
+            <ul>
+                <li><a href="#" data-rel="back">Back</a></li>
+                <li class="flex-stretch"></li>
+                <li><a href="#choose-location-page">Next</a></li>
+            </ul>
+        </header>
+        <div data-role="main">
+            <input type="hidden" id="location-animal-id">
+            <input type="hidden" id="location-back" value="-2">
+            form for choose animal
+        </div>
+    </section>
+
+<!-- CHOOSE LOCATION PAGE -->
+    <section data-role="page" id="choose-location-page">
+        <header data-role="header">
+            <h1>Choose Location</h1>
+            <ul>
+                <li><a href="#" data-rel="back">Back</a></li>
+                <li class="flex-stretch"></li>
+                <li><a href="#choose-description-page">Next</a></li>
+            </ul>
+        </header>
+        <div data-role="main">
+            <input type="hidden" id="location-lat">
+            <input type="hidden" id="location-lng">
+            <div class="map"></div>
+        </div>
+    </section>
+
+<!-- DESCRIPTION PAGE -->
+    <section data-role="page" id="choose-description-page">
+        <header data-role="header">
+            <h1>Description of Animal</h1>
+            <ul>
+                <li><a href="#" data-rel="back">Back</a></li>
+                <li class="flex-stretch"></li>
+                <li><a href="#" class="js-submit-location-add-form">Save</a></li>
+            </ul>
+        </header>
+        <div data-role="main">
+            <div class="padded">
+                <textarea class="form-input" rows="10" id="location-description"></textarea>
+            </div>
+        </div>
+    </section>
+
 
 </div>
 </section>

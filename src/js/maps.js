@@ -12,7 +12,8 @@ export const makeMap = async(target, center={lat:37.786038, lng:-122.399342}) =>
             zoom: 12,
             disableDefaultUI: true,
             styles: mapstyles,
-        })
+        }),
+        infoWindow: new google.maps.InfoWindow({content:''})
     });
 
     return map_el;

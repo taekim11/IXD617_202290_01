@@ -6,7 +6,7 @@
 :root {
     --font-header:'Urbanist', sans-serif;
     --font-body:var(--font-header);
-    --header-height: 6em;
+    --header-height: 5rem;
     --color-main-rgb: 101,186,183;
     --color-main-hue: 178;
     --color-main-light: hsl(var(--color-main-hue), 52%, 77%);
@@ -57,6 +57,8 @@ hr {
 }
  
 
+
+
 /* APP STRUCTURE */
 .ui-loader {
     display:none;
@@ -79,44 +81,29 @@ hr {
     flex: 1 1 100%;
     position: relative;
     overflow: hidden;
-    color: #ffffff;
+
     z-index:1;
 }
 
-[data-role="main2"] {
-    flex: 1 1 100%;
-    color: #ffffff;
-    text-align: center;
-}
-
-[data-role="main3"] {
-    flex: 1 1 100%;
-    color: #ffffff;
-    text-align: center;
-}
-
-
+[data-role="header"],
 [data-role="footer"] {
     line-height: var(--header-height);
     height: var(--header-height);
     position:relative;
     overflow:hidden;
-    background-color: #34323E;
-    box-shadow: 0 0 18px rgb(0 0 0 / 15%);
+    background-color:#42404F;
+    color: white;
+}
+[data-role="header"]:last-of-type,
+[data-role="footer"]:first-of-type {
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
     z-index:2;
 }
-
-[data-role="header"] {
-    line-height: 8.2em;
-    height: 6em;
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
+[data-role="header"]:not(:last-of-type),
+[data-role="footer"]:not(:first-of-type) {
+    z-index:3;
 }
 
-.ui-title {
-    margin-bottom: 1em;
-}
 
 /* Core Navigation */
 [data-role="header"] ul,
@@ -128,11 +115,9 @@ hr {
     width:100%;
     position:relative;
 }
-
 [data-role="footer"] li {
     flex: 1 1 auto;
     text-align: center;
-    margin-top: 6px;
 }
 
 [data-role="header"] h1 {
@@ -144,11 +129,12 @@ hr {
     color: #ffffff;
     text-align:center;
     font-size: 1em;
-    margin:none;
+    margin:0;
 }
 
 [data-role="header"] a {
     padding: 0 1em;
+    margin-top: 0.5em;
 }
 [data-role="header"] a,
 [data-role="footer"] a {
@@ -173,12 +159,18 @@ hr {
 
 .overscroll { overflow: auto; }
 
+.hidden { display: none; }
+
+.padded { padding:1em; }
+
+.full { height:100%; }
 
 
 /* FORMS */
 .form p {
     text-align: center;
     font-size: 28px;
+    color:white;
 }
 .dropdown {
     justify-content: center;
@@ -264,7 +256,6 @@ input {
 
 #signin-form {
     padding: 1em;
-    margin-bottom:6em;
 }
 
 #signup-form {
@@ -313,8 +304,8 @@ input {
 /* FLOATER */
 .floater { position:absolute; }
 .floater.top { top: 1rem; }
-.floater.right { right: 10.5rem; }
-.floater.bottom { bottom: 0.6rem; }
+.floater.right { right: 1rem; }
+.floater.bottom { bottom: 1rem; }
 .floater.left { left: 1rem; }
 
 .btn-circle {
@@ -443,13 +434,50 @@ input {
     height: 100%;
     position:relative;
     overflow:auto;
+
     padding: 1em;
-    color: #ffffff;
 }
 
-.info {
-    text-align: left;
-    margin: 36px;
+[data-role="footer"] .icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    vertical-align: middle;
+}
+[data-role="footer"] a {
+    line-height: 1rem;
+    color: inherit;
+}
+.footer-icon {
+    display: block;
+    line-height: 1.7rem;
+}
+.footer-label {
+    line-height: 1.3rem;
+    font-size: 0.6rem;
+    display: block;
+}
+
+.animallist-item {
+    display: flex;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
+    margin: 1em 0;
+    border-radius: 1em;
+    overflow: hidden;
+    font-weight:normal;
+    color:inherit;
+}
+.animallist-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: text-bottom;
+}
+.animallist-body {
+    padding: 1em;
+}
+.animallist-name {
+    font-size:1.3em;
 }
 
 
@@ -467,13 +495,9 @@ input {
 .animallist-body {
     padding: inherit;
     margin-left: 2px;
+    color: white;
 }
-/*
-.animallist-item {
-    background-color: #3A3845;
-    border-radius: 10px;
-}
-*/
+
 .animallist-item {
     display: flex;
     box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
@@ -576,8 +600,6 @@ input {
 
 
 .listadd {
-    margin-left: 4px;
-    margin-top: 4px;
     width: 38px;
 }
 
@@ -635,7 +657,8 @@ input {
     padding:4em;
 }
 .user-profile-body {
-    padding:2em;
+    padding: 2em;
+    color: white;
 }
 .user-profile-name {
     font-weight:1.5em;
@@ -650,13 +673,6 @@ input {
     background-size:contain;
     background-position:center;
     background-repeat: no-repeat;
-}
-
-
-.icon {
-    font-size: 1em;
-    width: 1em;
-    height: 1em;
 }
 
 
@@ -698,6 +714,78 @@ input {
     padding: 0 1em;
 }
 
+
+.filter-bar {
+    display:flex;
+    padding-inline: 1em;
+    gap: 1em;
+    overflow:auto;
+}
+.filter-bar span {
+    font-weight:bold;
+}
+
+#list-page header {
+    display:flex;
+}
+.hotdog {
+    margin: 5px;
+    line-height:var(--header-height);
+    background-color: var(--color-neutral-lighter);
+    border-radius: var(--header-height);
+    width: 100%;
+    display: flex;
+}
+.hotdog input {
+    width:100%;
+    height:100%;
+    background-color: unset;
+    border: unset;
+    outline: unset;
+    padding: unset;
+    margin: unset;
+    vertical-align: middle;
+    font: inherit;
+    padding: 0 1em;
+}
+
+.thumbnail {
+    position:relative;
+    display:inline-block;
+    width:6em;
+    height:6em;
+    border-radius:0.6em;
+    border:0.25em solid white;
+    vertical-align:middle;
+    box-shadow:0 0.15em 0.35em 0.1em rgba(0,0,0,0.2);
+    margin:0.5em;
+    
+    background-position:center;
+    background-size:cover;
+  }
+/* This will hide the file input */
+.imagepicker input {
+    display:none;
+  }
+  .imagepicker {
+    cursor:pointer;
+    color:white;
+    background-color:rgba(0,0,0,0.3);
+  }
+  /* This will add the floating plus symbol to the imagepicker */
+  .imagepicker:before {
+    content:'+';
+    position:absolute;
+    font-size:3em;
+    vertical-align:middle;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  /* This will hide the plus symbol behind the background of the imagepicker if the class "picked" is added to the element */
+  .imagepicker.picked:before {
+    z-index:-1;
+  }
 
 .filter-bar {
     display:flex;

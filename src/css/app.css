@@ -6,7 +6,7 @@
 :root {
     --font-header:'Urbanist', sans-serif;
     --font-body:var(--font-header);
-    --header-height: 5rem;
+    --header-height: 4rem;
     --color-main-rgb: 101,186,183;
     --color-main-hue: 178;
     --color-main-light: hsl(var(--color-main-hue), 52%, 77%);
@@ -91,12 +91,11 @@ hr {
     height: var(--header-height);
     position:relative;
     overflow:hidden;
-    background-color:#42404F;
     color: white;
 }
+
 [data-role="header"]:last-of-type,
 [data-role="footer"]:first-of-type {
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
     z-index:2;
 }
 [data-role="header"]:not(:last-of-type),
@@ -134,7 +133,7 @@ hr {
 
 [data-role="header"] a {
     padding: 0 1em;
-    margin-top: 0.5em;
+    margin-top: 1em;
 }
 [data-role="header"] a,
 [data-role="footer"] a {
@@ -276,12 +275,19 @@ input {
     align-items: center;
 }
 .hero-icon {
-    width: 70vw;
+    width: 60vw;
     aspect-ratio: 1 / 1;
 }
 .hero-icon2 {
     width: 60vw;
     aspect-ratio: 1 / 1;
+}
+
+@media (max-width: 500px)
+.hero-icon {
+    width: 100%;
+    height: 40vh;
+    object-fit: contain;
 }
 
 
@@ -296,8 +302,8 @@ input {
     background-size: cover;
 }
 
-.nav {
-    width:40px;
+.listadd {
+    width: 32px;
 }
 
 
@@ -446,6 +452,7 @@ input {
 [data-role="footer"] a {
     line-height: 1rem;
     color: inherit;
+    background: #34323E;
 }
 .footer-icon {
     display: block;
@@ -483,18 +490,14 @@ input {
 
 /* ANIMAL PROFILE */
 .animallist {
+    height: 100%;
     position: relative;
     overflow: auto;
-    display: grid;
-    grid-template-columns: auto auto;
     padding: 1em;
-    gap: 1rem 1rem;
-    align-items: center;
 }
 
 .animallist-body {
-    padding: inherit;
-    margin-left: 2px;
+    padding: 1em;
     color: white;
 }
 
@@ -595,12 +598,6 @@ input {
 
 #info {
     align-items: center;
-}
-
-
-
-.listadd {
-    width: 38px;
 }
 
 .back {

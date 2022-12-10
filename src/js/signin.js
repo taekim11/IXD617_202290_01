@@ -21,8 +21,8 @@ export const checkSigninForm = async() => {
         console.log("Failure");
         sessionStorage.removeItem("userId");
 
-        $(".warning").html("");
-        setTimeout(()=>{$(".warning").html("");},3000)
+        $(".warning").css("display", "block");
+        setTimeout(()=>{$(".warning").css("display", "none");},3000)
     }
 
     checkUserId();

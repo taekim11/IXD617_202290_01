@@ -6,7 +6,10 @@ IXD 617 Advanced Tech: Mobile Web
 ### Important Links
 - http://tae-kim-design.com/aau/ixd617
 - https://github.com/taekim11/IXD617_202290_01
+
+### Screenshots Links
 - https://github.com/taekim11/IXD617_202290_01/tree/main/screenshots/midterm
+- https://github.com/taekim11/IXD617_202290_01/tree/main/screenshots/final
 
 ### Assignment Links
 - http://tae-kim-design.com/aau/ixd617/profile/

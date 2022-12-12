@@ -725,6 +725,7 @@ hr {
 }
 .animal-map-body h1 {
     margin-left: 0em;
+    text-align: left;
 }
 
 .user-profile-image img {

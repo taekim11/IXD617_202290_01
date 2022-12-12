@@ -313,7 +313,7 @@ hr {
 .floater.trash { bottom: 7rem; left: 22rem;}
 
 .btn-circle {
-    color: inherit;
+    color: #26252D;
     background-color: #DCA35E;
     border-radius: 2rem;
     line-height: 3rem;
@@ -368,17 +368,20 @@ hr {
 
 .modal-popup {
     position: absolute;
-    top: 50%;
+    top: 82%;
     left: 50%;
     transform: translate(-50%, calc(-50% + 3em));
-    width: 80vw;
-    max-height: 60vh;
-    display:flex;
+    width: 88vw;
+    max-height: 40vh;
+    display: flex;
     flex-direction: column;
-    border-radius: 0.3em;
-    overflow:hidden;
+    border-radius: 1em;
+    overflow: hidden;
     transition: all 0.3s;
+    background-color: #34323E;
+    padding: 1.4em;
 }
+
 .modal.active .modal-popup {
     transform: translate(-50%, -50%);
 }
@@ -541,9 +544,11 @@ hr {
     background-size:cover;
 }
 .animal-profile-nav {
-    flex:none;
-    line-height:var(--header-height);
-    display:flex;
+    flex: none;
+    line-height: var(--header-height);
+    display: flex;
+    color: white;
+    font-weight: 400;
 }
 .nav-link {
     flex: 1 1 50%;
@@ -567,14 +572,17 @@ hr {
     transition:all 0.3s;
 }
 .animal-profile-section.active {
-    opacity:1;
+    opacity: 1;
     pointer-events: initial;
+    color: white;
 }
 
 /* USER PROFILE */
 .social-media {
     display: flex;
     justify-content: space-around;
+    flex: 5 5 100%;
+    margin-top: -22em;
 }
 
 .social-media img {
@@ -587,6 +595,12 @@ hr {
     font-size: 16px;
 }
 
+.gallery {
+    text-align: center;
+    margin-top: -22em;
+    margin-bottom: 16px;
+}
+
 .chat {
     width:34px;
     margin-left: 0px;
@@ -596,8 +610,19 @@ hr {
     height: 100%;
     position: relative;
     padding: 1em;
-
 }
+
+.user-profile-text {
+    color: white;
+    margin-top: -4px;
+}
+
+.user-profile-text h3 {
+    color: white;
+    margin-top: 18px;
+    text-align: center;
+}
+
 .goright {
     width: 26px;
     margin-left: 240px;
@@ -661,7 +686,7 @@ hr {
 
 .user-profile-image img {
     width: 100%;
-    height: 32vh;
+    height: 34vh;
     object-fit: cover;
 }
 

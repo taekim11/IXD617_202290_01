@@ -100,6 +100,7 @@ export const checkUserEditPhotoForm = () => {
 
 
 
+
 export const checkAnimalAddForm = () => {
     let name = $("#animal-add-name").val();
     let type = $("#animal-add-type").val();
@@ -158,7 +159,7 @@ export const checkAnimalDeleteForm = () => {
         if (data.error) {
             throw(data.error);
         } else {
-            window.history.go();
+            window.history.back();
         }
     })
 }

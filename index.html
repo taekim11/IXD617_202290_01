@@ -207,14 +207,14 @@
  <!-- USER PROFILE PAGE -->
  <section data-role="page" id="user-profile-page">
     <div data-role="main2">
-        <div class="body">
-        </div>
+        <div class="body"> </div>
 
         <div class="floater top right">
-            <a href="#user-settings-page">
+            <a href="#" data-activate="#recent-add-modal">
                 <img class="listadd" style="font-size:1em" src="images/icons/setting.png"></a>
         </div>
     </div>
+
 <div class="social-media">
     <div>
         <img src="images/icons/facebook.png">
@@ -226,7 +226,10 @@
         <img src="images/icons/telegram.png">
     </div>
 </div>
-   
+
+<div class="gallery">
+    <img src="images/gallery.png">
+</div>
 
     <footer data-role="footer">
         <ul>
@@ -235,24 +238,27 @@
             <li><a href="#user-profile-page"> <img src="images/icons/personon.png" alt="" class="nav"></a></li>
         </ul>
     </footer>
+
+<div id="recent-add-modal" class="modal">
+    <div class="modal-back" data-deactivate="#recent-add-modal"></div>
+        <div class="modal-popup">
+        <div class="user-profile-text">
+            <h3 style="font-size: 2em;">Your Profile</h3>
+        <div class="setting-form">
+            <a href="#user-edit-page"><img src="images/icons/edituser.png"></a>
+        </div>
+        <div class="setting-form">
+            <a href="#password-edit-page"><img src="images/icons/editpw.png"></a>
+        </div>
+        <div class="setting-form">
+            <a href="#" class="js-logout"><img src="images/icons/exit.png"></a>
+        </div>
+        </div>
+    </div>
+</div>
+
 </section>
 
-<!-- USER SETTINGS PAGE -->
-<section data-role="page" id="user-settings-page">
-    <header data-role="header">
-        <h1>Settings</h1>
-        <ul>
-            <li><a href="#" data-rel="back"><img src="images/icons/goback.png" alt="" class="listadd"></a></li>
-        </ul>
-    </header>
-    <div data-role="main">
-        <div class="settings">
-            <li><a href="#user-edit-page">Edit User</a></li>
-            <li><a href="#password-edit-page">Edit Password</a></li>
-            <li><a href="#" class="js-logout">Log out</a></li>
-        </ul>
-    </div>
-</section>
 
 <!-- USER EDIT PAGE -->
 <section data-role="page" id="user-edit-page">
@@ -317,6 +323,7 @@
 </section>
 
     <!-- Animal PROFILE PAGE -->
+
     <section data-role="page" id="animal-profile-page">
         <header data-role="header">
             <h1></h1>
@@ -328,6 +335,9 @@
         </header>
         <div data-role="main">
             <div class="animal-profile-top">
+                <div class="floater bottom right">
+                    <a href="#" class="js-animal-delete"><img class="icon" src="images/icons/trash.png" style="font-size:1.5em" /></a>
+                </div>
             </div>
             <div class="animal-profile-nav">
                 <div class="nav-link active">Map</div>
@@ -346,10 +356,11 @@
         </div>
     </section>
 
+
   <!-- ANIMAL EDIT PAGE -->
   <section data-role="page" id="animal-edit-page">
     <header data-role="header">
-        <h1>Edit Animal</h1>
+        <h1>Edit Jindo</h1>
         <ul>
             <li><a href="#" data-rel="back"><img src="images/icons/goback.png" alt="" class="listadd"></a></li>
             <li class="flex-stretch"></li>
@@ -372,6 +383,7 @@
 </section>
 
 <!-- ANIMAL ADD PAGE -->
+
 <section data-role="page" id="animal-add-page">
     <header data-role="header">
         <h1>Add Jindo</h1>
@@ -384,24 +396,6 @@
     <form data-role="main" data-ajax="false" id="animal-add-form" class="padded display-flex flex-column full overscroll">
         <div class="body"></div>
     </form>
-</section>
-
-<!-- CHOOSE ANIMAL PAGE -->
-
-<section data-role="page" id="choose-animal-page">
-    <header data-role="header">
-        <h1>Add Jindo</h1>
-        <ul>
-            <li><a href="#" data-rel="back"><img src="images/icons/goback.png" alt="" class="listadd"></a></li>
-            <li class="flex-stretch"></li>
-            <li><a href="#choose-location-page"><img src="images/icons/next.png" alt="" class=""></a></li>
-        </ul>
-    </header>
-    <div data-role="main">
-        <input type="hidden" id="location-animal-id">
-        <input type="hidden" id="location-back" value="-2">
-        form for choose animal
-    </div>
 </section>
 
 <!-- CHOOSE LOCATION PAGE -->
@@ -421,22 +415,41 @@
         </div>
     </section>
 
-<!-- DESCRIPTION PAGE -->
-    <section data-role="page" id="choose-description-page">
-        <header data-role="header">
-            <h1>Description of Animal</h1>
-            <ul>
-                <li><a href="#" data-rel="back"><img src="images/icons/goback.png" alt="" class="listadd"></a></li>
-                <li class="flex-stretch"></li>
-                <li><a href="#" class="js-submit-location-add-form"><img src="images/icons/save.png" alt="" class=""></a></li>
-            </ul>
-        </header>
-        <div data-role="main">
-            <div class="padded">
-                <textarea class="form-input" rows="10" id="location-description"></textarea>
-            </div>
+ <!-- CHOOSE LOCATION PAGE -->
+
+ <section data-role="page" id="choose-description-page">
+    <header data-role="header">
+        <h1>Description</h1>
+        <ul>
+            <li><a href="#" data-rel="back"><img src="images/icons/goback.png" alt="" class="listadd"></a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#" class="js-submit-location-add-form"><img src="images/icons/submit.png" alt="" class=""></a></li>
+        </ul>
+    </header>
+    <div data-role="main">
+        <div class="padded">
+            <textarea class="form-input" rows="10" id="location-description"></textarea>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- CHOOSE ANIMAL PAGE -->
+
+<section data-role="page" id="choose-animal-page">
+    <header data-role="header">
+        <h1>Add Jindo</h1>
+        <ul>
+            <li><a href="#" data-rel="back"><img src="images/icons/goback.png" alt="" class="listadd"></a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#choose-location-page"><img src="images/icons/next.png" alt="" class=""></a></li>
+        </ul>
+    </header>
+    <div data-role="main">
+        <input type="hidden" id="location-animal-id">
+        <input type="hidden" id="location-back" value="-2">
+    </div>
+</section>
+
 
 
 </div>

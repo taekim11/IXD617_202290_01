@@ -29,7 +29,7 @@
 </head>
 <body>
 
-<!-- SIGNIN PAGE -->
+<!-- LOGNIN PAGE -->
     <section data-role="page" id="signin-page">
         <div data-role="main" class="display-flex flex-column">
             <div class="flex-stretch signin-hero">
@@ -49,10 +49,10 @@
                     <p>Incorrect email or password, please try again.</p>
                 </div>
                 <div class="form-control">
-                    <input type="submit" class="form-button" value="Log In" data-role="none">
+                    <input type="submit" class="form-button" value="Log in" data-role="none">
                 </div>
                 <div class="form-control" style="text-align:center; font-size: 0.8em">
-                    Don't have an account? <a href="#onboarding-page">Sign Up!</a>
+                    Don't have an account? <a href="#onboarding-page">Sign up!</a>
                 </div>
             </form>
         </div>
@@ -69,7 +69,7 @@
     </header>
     <div data-role="main" class="display-flex flex-column flex-justify-center">
         <div class="flex-stretch signin-hero">
-            <img src="images/jindo.png" alt="" class="hero-icon">
+            <img src="images/jindo.png" alt="" class="hero-icon2">
         </div>
         <form class="form" id="signup-form" data-ajax="false">
             <div class="form-control">
@@ -88,11 +88,14 @@
                 <label class="form-label" for="signup-confirm">Confirm Password</label>
                 <input class="form-input" type="password" id="signup-confirm" data-role="none" placeholder="Password (4 characters or more)">
             </div>
+            <div class="warning" style="display:none;">
+                <p>Username or Email already exists</p>
+            </div>
             <div class="form-control">
-                <input type="submit" class="form-button" value="Sign Up" data-role="none">
+                <input type="submit" class="form-button" value="Sign up" data-role="none">
             </div>
             <div class="form-control" style="text-align:center; font-size: 0.8em">
-                Already have an account? <a href="#signin-page">Sign In!</a>
+                Already have an account? <a href="#signin-page">Sign in!</a>
             </div>
         </form>
     </div>
@@ -137,7 +140,7 @@
         <form class="form">
             <p>Add your favorite Jindo!</p>
             <div class="form-control">
-                <a href="#signup-page"><input type="submit" class="form-button" value="Get Started" data-role="none"></a>
+                <a href="#signup-page"><input type="submit" class="form-button" value="Get started" data-role="none"></a>
             </div>
 
         </form>
@@ -150,10 +153,14 @@
         <div data-role="main">
             <div class="map"></div>
 
-            <div class="floater bottom right">
-                <a href="#choose-animal-page" class="btn-circle">&plus;</a>
-            </div>
+             <!-- <div class="floater bottom right">
+                <a href="#choose-location-page" class="btn-circle">&plus;</a>
+            </div> -->
 
+            <div class="floater bottom right">
+                <a href="#animal-add-page" class="btn-circle">&plus;</a>
+            </div>
+            
             <div id="map-recent-modal" class="modal">
                 <div class="modal-back transparent" data-deactivate="#map-recent-modal"></div>
                 <div class="modal-drawer island top">
@@ -213,6 +220,7 @@
             <a href="#" data-activate="#recent-add-modal">
                 <img class="listadd" style="font-size:1em" src="images/icons/setting.png"></a>
         </div>
+
     </div>
 
 <div class="social-media">
@@ -228,7 +236,7 @@
 </div>
 
 <div class="gallery">
-    <img src="images/gallery.png">
+    <img src="images/gallery.png"></a>
 </div>
 
     <footer data-role="footer">
@@ -249,6 +257,9 @@
         </div>
         <div class="setting-form">
             <a href="#password-edit-page"><img src="images/icons/editpw.png"></a>
+        </div>
+        <div class="setting-form">
+            <a href="#help-center-page"><img src="images/icons/help.png"></a>
         </div>
         <div class="setting-form">
             <a href="#" class="js-logout"><img src="images/icons/exit.png"></a>
@@ -273,10 +284,6 @@
     <form data-role="main" data-ajax="false" id="user-edit-form" class="padded display-flex flex-column full overscroll">
         <div class="body"></div>
         <div class="flex-stretch"></div>
-        
-        <div class="form-control">
-            <input class="form-button" type="submit" data-role="none" value="Submit">
-        </div>
     </form>
 </section>
 
@@ -302,6 +309,35 @@
             </div>
         </div>
     </form>
+</section>
+
+<!-- HELP CENTER PAGE -->
+<section data-role="page" id="help-center-page">
+    <header data-role="header">
+        <h1>About Jindo</h1>
+        <ul>
+            <li><a href="#" data-rel="back"><img src="images/icons/goback.png" alt="" class="listadd"></a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </header>
+
+<div class="aboutjindo">
+      <h2>What are they?</h2>
+      <br>
+      <p>The Jindo dog is an indigenous dog native to Jindo Island in South Korea. It is one of South Korea's Natural Treasures, prized for its loyalty.
+      Welcome to JINDO, provides tracking Jindo services by Tae Kim.</p><br>
+      <h2>Description</h2>
+      <br>
+      <p>Jindos are double-coated spitz-type dogs<br>
+      Loyal, watchful, and intelligent, the Jindo developed as a breed on an island off the coast of South Korea. Medium-sized and natural in appearance, 
+      they are valued as independent hunters, discerning guardians, and loyal companions.The Jindo Dog is a well-proportioned, medium-sized dog used for hunting and guarding. 
+      With erect ears and a rolled or sickle-shaped tail, it should be a vivid expression of agility, strength, alertness and dignity.The Jindo has a very strong instinct for hunting and is bold, brave, alert and careful, not tempted easily and impetuous. 
+      But most of all he is extremely faithful to his master.
+      JINDO is designed and launched by Tae Kim.
+      <br><br><br>    
+</div>    
+
 </section>
 
 <!-- USER EDIT PHOTO PAGE -->
@@ -335,9 +371,9 @@
         </header>
         <div data-role="main">
             <div class="animal-profile-top">
-                <div class="floater bottom right">
-                    <a href="#" class="js-animal-delete"><img class="icon" src="images/icons/trash.png" style="font-size:1.5em" /></a>
-                </div>
+                <!-- <div class="floater bottom right">
+                    <a href="#" class="js-animal-delete"><img class="icon" src="images/icons/trash.png" style="font-size:1.8em" /></a>
+                </div>-->
             </div>
             <div class="animal-profile-nav">
                 <div class="nav-link active">Map</div>
@@ -371,13 +407,9 @@
         <div class="body">
         </div>
         <div class="flex-stretch">
-            <div class="floater trash">
-                <a href="#list-page" class="js-animal-delete"><img class="icon" src="images/icons/trash.png" style="font-size:1.5em" /></a>
+            <div class="form-button2">
+                <a href="#list-page" class="js-animal-delete"><img class="icon" src="images/icons/trash.png" style="font-size:1em" /></a>
             </div>
-        </div>
-        
-        <div class="form-control">
-            <input class="form-button" type="submit" data-role="none" value="Submit">
         </div>
     </form>
 </section>
@@ -395,6 +427,7 @@
     </header>
     <form data-role="main" data-ajax="false" id="animal-add-form" class="padded display-flex flex-column full overscroll">
         <div class="body"></div>
+        <div class="flex-stretch"></div>
     </form>
 </section>
 

@@ -23,10 +23,11 @@ export const makeUserProfilePage = ({name,email,username,img})=>`
 </div>
 `
 
-export const makeAnimalProfileDescription = ({name,type,breed})=>`
+export const makeAnimalProfileDescription = ({name,type,breed,description})=>`
 <h2>${name}</h2>
 <div>${type}</div>
 <div>${breed}</div>
+<div>${description}</div>
 `
 
 

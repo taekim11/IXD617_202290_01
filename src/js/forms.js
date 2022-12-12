@@ -10,7 +10,10 @@ export const checkSignupForm = () => {
     let confirm = $("#signup-confirm").val();
     
     if (password !== confirm) {
-        // tell user to try again
+        
+        $(".warning").css("display", "block");
+        setTimeout(()=>{$(".warning").css("display", "none");},3000)
+        
         throw("password failed, show the user");
         return;
     }

@@ -739,8 +739,9 @@ hr {
     color: white;
 }
 .user-profile-name {
-    font-weight:1.5em;
     text-align: center;
+    font-weight: 700;
+    font-size: 30px;
 }
 .edittext {
     text-align: center;
